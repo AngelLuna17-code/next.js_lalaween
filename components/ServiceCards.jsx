@@ -18,8 +18,10 @@ const ImageSlider = memo(({ images }) => {
         <Slider {...sliderSettings}>
             {images.map((image, index) => (
                 <div key={index}>
-                    <img
-                        className='w-auto h-[400px] object-contain mx-auto'
+                    <Image
+                        className=' object-contain mx-auto'
+                        height={0}
+                        width={300}
                         src={image}
                         alt={`slider-${index}`}
                         loading="lazy"
