@@ -79,7 +79,7 @@ const Facturar = () => {
                         {/* Correo Electronico */}
                         {/* Folio IEPS */}
                         <div className="mt-3">
-                            <label>Folio IEPS "Opcional"
+                            <label>Folio IEPS, Opcional
                                 <input className="w-full font-black text-black typing" type="text" name="Folio IEPS" />
                             </label>
                         </div>
