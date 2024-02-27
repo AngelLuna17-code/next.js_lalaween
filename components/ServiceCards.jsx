@@ -32,13 +32,22 @@ const ImageSlider = memo(({ images }) => {
     );
 });
 
+ImageSlider.displayName = 'ImageSlider';
+
 const ServiceCards = () => {
     const [showModal, setShowModal] = useState(false);
     const [sliderImages, setSliderImages] = useState([]);
+    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
-    const openModal = (images) => {
+    const openModal = (images, index) => {
         setSliderImages(images);
+        setSelectedImageIndex(index);
         setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
+        setSelectedImageIndex(null);
     };
 
     const list = [
@@ -139,7 +148,7 @@ const ServiceCards = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='relative cursor-pointer' onClick={() => openModal(slide.images)}>
+                            <div className='relative cursor-pointer' onClick={() => openModal(slide.images, index)}>
                                 <Image
                                     className='rounded-b-[15px]'
                                     height={0}
@@ -159,8 +168,8 @@ const ServiceCards = () => {
                 </div>
             </div>
             {showModal && (
-                <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-                    <div className="relative my-6 mx-auto w-[95%] md:w-[80%] xl:w-[65%] 2xl:w-[55%]">
+                <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none" onClick={closeModal}>
+                    <div className="relative my-6 mx-auto w-[95%] md:w-[80%] xl:w-[65%] 2xl:w-[55%]" onClick={(e) => e.stopPropagation()}>
                         <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-[#0b0b0b] outline-none focus:outline-none">
                             <div className="flex items-start justify-between p-0 md:p-5 border-b border-solid border-blueGray-200 rounded-t">
                                 <h3 className="text-2xl font-semibold text-white">
@@ -168,7 +177,7 @@ const ServiceCards = () => {
                                 </h3>
                                 <button
                                     className="p-1 ml-auto bg-transparent border-0 text-white opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                                    onClick={() => setShowModal(false)}
+                                    onClick={closeModal}
                                 >
                                     <span className="bg-transparent text-white opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                                         ×
@@ -182,7 +191,7 @@ const ServiceCards = () => {
                                 <button
                                     className="text-white background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                                     type="button"
-                                    onClick={() => setShowModal(false)}
+                                    onClick={closeModal}
                                 >
                                     Cerrar
                                 </button>
