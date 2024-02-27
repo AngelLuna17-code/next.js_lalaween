@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import CardAnimatedText from '../components/CardAnimatedText';
 import Image from 'next/image';
 
-function ImageSlider({ images }) {
+const ImageSlider = ({ images }) => {
     const sliderSettings = {
         infinite: true,
         speed: 500,
@@ -30,11 +30,11 @@ function ImageSlider({ images }) {
             ))}
         </Slider>
     );
-}
+};
 
 ImageSlider.displayName = 'ImageSlider';
 
-function ServiceCards() {
+const ServiceCards = () => {
     const [showModal, setShowModal] = useState(false);
     const [sliderImages, setSliderImages] = useState([]);
     const [selectedImageIndex, setSelectedImageIndex] = useState(null);
@@ -202,7 +202,7 @@ function ServiceCards() {
             )}
         </div>
     );
-}
+};
 
 ServiceCards.displayName = 'ServiceCards';
 
