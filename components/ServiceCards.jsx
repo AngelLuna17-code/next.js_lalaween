@@ -32,6 +32,8 @@ function ImageSlider({ images }) {
     );
 }
 
+ImageSlider.displayName = 'ImageSlider';
+
 function ServiceCards() {
     const [showModal, setShowModal] = useState(false);
     const [sliderImages, setSliderImages] = useState([]);
@@ -201,5 +203,7 @@ function ServiceCards() {
         </div>
     );
 }
+
+ServiceCards.displayName = 'ServiceCards';
 
 export default ServiceCards;
