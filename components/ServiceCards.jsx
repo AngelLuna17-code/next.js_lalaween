@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import CardAnimatedText from '../components/CardAnimatedText';
 import Image from 'next/image';
 
-const ImageSlider = memo(({ images }) => {
+const ImageSlider = memo(function ImageSlider({ images }) {
     const sliderSettings = {
         infinite: true,
         speed: 500,
@@ -31,8 +31,6 @@ const ImageSlider = memo(({ images }) => {
         </Slider>
     );
 });
-
-ImageSlider.displayName = 'ImageSlider';
 
 const ServiceCards = () => {
     const [showModal, setShowModal] = useState(false);
