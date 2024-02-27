@@ -48,7 +48,7 @@ const Promociones2 = () => {
       <div className='container mx-auto mt-[100px] py-[50px] lg:py-[100px]'>
         <div className='grid grid-cols-3 gap-5'>
           {list.map((item, index) => (
-            <div className='p-5 rounded-lg flex items-center justify-center' style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
+            <div key={index} className='p-5 rounded-lg flex items-center justify-center' style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
               <div>
                 <div className='text-center'>
                   <h3 className='text-[#00a09b] font-black text-[23px] typing'>
