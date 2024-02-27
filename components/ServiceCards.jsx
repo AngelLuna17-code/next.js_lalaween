@@ -1,12 +1,12 @@
 'use client';
-import React, { memo, useState } from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import CardAnimatedText from '../components/CardAnimatedText';
 import Image from 'next/image';
 
-const ImageSlider = memo(function ImageSlider({ images }) {
+function ImageSlider({ images }) {
     const sliderSettings = {
         infinite: true,
         speed: 500,
@@ -30,9 +30,9 @@ const ImageSlider = memo(function ImageSlider({ images }) {
             ))}
         </Slider>
     );
-});
+}
 
-const ServiceCards = () => {
+function ServiceCards() {
     const [showModal, setShowModal] = useState(false);
     const [sliderImages, setSliderImages] = useState([]);
     const [selectedImageIndex, setSelectedImageIndex] = useState(null);
@@ -200,6 +200,6 @@ const ServiceCards = () => {
             )}
         </div>
     );
-};
+}
 
 export default ServiceCards;
