@@ -68,7 +68,6 @@ const ServiceCards = () => {
     ];
 
     const settings = {
-        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -77,7 +76,7 @@ const ServiceCards = () => {
 
     return (
         <section>
-            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 py-[50px] lg:py-[100px]'>
+            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 py-[50px] lg:py-[100px] px-[10px]'>
                 {/* Cards */}
                 {list.map((item, index) => (
                     <div className="rounded-[15px]" key={index} style={{ backgroundColor: item.bgColor }}>
@@ -130,26 +129,27 @@ const ServiceCards = () => {
             {/* Modal */}
             {openModalIndex !== null && (
                 <div className="modal-overlay z-10 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-                    <div className="modal bg-black p-8 rounded-[15px] min-w-[900px] w-[1300px]" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
+                    <div className="modal bg-black rounded-[15px] w-[360px] xl:w-[1300px]" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
                         {/* header del modal */}
-                        <div>
+                        <div className='p-5' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                             <div>
                                 <p className='title text-2xl'>
                                     {list[openModalIndex].title}
                                 </p>
                             </div>
+                            {/* Botón para cerrar el modal */}
+                            <button
+                                className="text-white bg-transparent border-none cursor-pointer"
+                                onClick={handleCloseModal}
+                                style={{ marginTop: '0' }}>
+                                X
+                            </button>
+                            {/* Botón para cerrar el modal */}
                         </div>
                         {/* header del modal */}
-                        {/* Botón para cerrar el modal */}
-                        <button
-                            className="close-btn absolute top-0 right-0 text-white bg-transparent border-none cursor-pointer"
-                            onClick={handleCloseModal}>
-                            X
-                        </button>
-                        {/* Botón para cerrar el modal */}
                         {/* Contenido del modal */}
-                        <div className='py-[20px]'>
-                            <Slider className='w-[70%] mx-auto' {...settings}>
+                        <div>
+                            <Slider className='w-[75%] mx-auto' {...settings}>
                                 {list[openModalIndex].images.map((image, index) => (
                                     <div key={index}>
                                         <img
@@ -167,7 +167,7 @@ const ServiceCards = () => {
                         <div>
                             {/* Botón para cerrar el modal */}
                             <div>
-                                <div className='mt-8'>
+                                <div className=''>
                                     <button
                                         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                                         onClick={handleCloseModal}>
