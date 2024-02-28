@@ -65,7 +65,24 @@ const CarruselPortafolio = () => {
                                 width={400}
                             />
                         </div>
-                        {/* Agrega más imágenes si es necesario */}
+                        <div>
+                            <Image
+                                className='mx-auto rounded-[15px]'
+                                src="/slider/4.webp"
+                                alt="imagen3"
+                                height={0}
+                                width={400}
+                            />
+                        </div>
+                        <div>
+                            <Image
+                                className='mx-auto rounded-[15px]'
+                                src="/slider/5.webp"
+                                alt="imagen3"
+                                height={0}
+                                width={400}
+                            />
+                        </div>
                     </Slider>
                 </div>
             </div>
