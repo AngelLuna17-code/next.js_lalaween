@@ -1,7 +1,9 @@
 'use client';
-'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const ServiceCards = () => {
     const [openModalIndex, setOpenModalIndex] = useState(null);
@@ -64,6 +66,14 @@ const ServiceCards = () => {
         },
     ];
 
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+
     return (
         <section>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3'>
@@ -85,7 +95,7 @@ const ServiceCards = () => {
                         {/* Modal */}
                         {openModalIndex === index && (
                             <div className="modal-overlay z-10 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-                                <div className="modal bg-black p-8 rounded-[15px] min-w-[900px] w-[1300px]"style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
+                                <div className="modal bg-black p-8 rounded-[15px] min-w-[900px] w-[1300px]" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
                                     {/* header del modal */}
                                     <div>
                                         <h2 className="text-white">{item.title}</h2>
@@ -100,7 +110,18 @@ const ServiceCards = () => {
                                     {/* Botón para cerrar el modal */}
                                     {/* Contenido del modal */}
                                     <div>
-                                        <p className="text-white">Contenido del modal</p>
+                                        <Slider {...settings}>
+                                            {item.images.map((image, index) => (
+                                                <div key={index}>
+                                                    <Image
+                                                        src={image}
+                                                        height={100}
+                                                        width={100}
+                                                        alt='Servicios'
+                                                    />
+                                                </div>
+                                            ))}
+                                        </Slider>
                                     </div>
                                     {/* Contenido del modal */}
                                     {/* footer del modal */}
@@ -120,16 +141,6 @@ const ServiceCards = () => {
                             </div>
                         )}
                         {/* Modal */}
-                        {/* Aquí puedes hacer un bucle para mostrar las imágenes */}
-                        {item.images.map((image, index) => (
-                            <Image
-                                key={index}
-                                src={image}
-                                height={100}
-                                width={100}
-                                alt='Servicios'
-                            />
-                        ))}
                     </div>
                 ))}
             </div>
