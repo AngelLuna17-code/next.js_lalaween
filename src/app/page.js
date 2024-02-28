@@ -14,7 +14,9 @@ export default function Home() {
         {/* Hero */}
         <Hero />
         {/* Hero */}
+        {/* Portafolio */}
         <CarruselPortafolio />
+        {/* Portafolio */}
         {/* Mapa */}
         <Mapa />
         {/* Mapa */}
