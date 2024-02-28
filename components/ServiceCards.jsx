@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import CardAnimatedText from './CardAnimatedText';
 
 const ServiceCards = () => {
     const [openModalIndex, setOpenModalIndex] = useState(null);
@@ -76,13 +77,34 @@ const ServiceCards = () => {
 
     return (
         <section>
-            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3'>
+            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5'>
                 {list.map((item, index) => (
-                    <div className="card" key={index} style={{ backgroundColor: item.bgColor }}>
-                        <h2>{item.title}</h2>
-                        <img src={item.icon} alt="Icono" />
-                        <p>{item.sub}</p>
-                        <p>{item.text}</p>
+                    <div className="rounded-[15px]" key={index} style={{ backgroundColor: item.bgColor }}>
+                        <div className='text-center p-5'>
+                            <p className='title text-2xl'>
+                                {item.title}
+                            </p>
+                            <Image
+                                className='mx-auto mt-3'
+                                height={100}
+                                width={100}
+                                src={item.icon}
+                                alt={item.title}
+                                loading="lazy"
+                            />
+                            <div className='mt-3'>
+                                {index === 2 && (
+                                    <CardAnimatedText />
+                                )}
+                            </div>
+                            <p className='font-black mt-3'>
+                                {item.sub}
+                            </p>
+                            <p className='mt-3'>
+                                {item.text}
+                            </p>
+                        </div>
+
                         {/* Botón para abrir el modal */}
                         <div>
                             <button
@@ -98,7 +120,11 @@ const ServiceCards = () => {
                                 <div className="modal bg-black p-8 rounded-[15px] min-w-[900px] w-[1300px]" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
                                     {/* header del modal */}
                                     <div>
-                                        <h2 className="text-white">{item.title}</h2>
+                                        <div>
+                                            <p className='title text-2xl'>
+                                                {item.title}
+                                            </p>
+                                        </div>
                                     </div>
                                     {/* header del modal */}
                                     {/* Botón para cerrar el modal */}
