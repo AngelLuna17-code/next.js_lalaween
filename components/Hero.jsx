@@ -10,7 +10,7 @@ const Hero = () => {
             <div className='grid grid-cols-1 lg:grid-cols-2'>
                 <div className='flex items-center justify-center'>
                     <Image
-                        src="logo.webp"
+                        src="/logo.webp"
                         alt="logo"
                         width={500}
                         height={350}
