@@ -77,7 +77,7 @@ const ServiceCards = () => {
 
     return (
         <section>
-            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5'>
+            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 py-[50px] lg:py-[100px]'>
                 {/* Cards */}
                 {list.map((item, index) => (
                     <div className="rounded-[15px]" key={index} style={{ backgroundColor: item.bgColor }}>
@@ -148,8 +148,8 @@ const ServiceCards = () => {
                         </button>
                         {/* Botón para cerrar el modal */}
                         {/* Contenido del modal */}
-                        <div>
-                            <Slider className='W-[70%] MX-AUTO' {...settings}>
+                        <div className='py-[20px]'>
+                            <Slider className='w-[70%] mx-auto' {...settings}>
                                 {list[openModalIndex].images.map((image, index) => (
                                     <div key={index}>
                                         <img
