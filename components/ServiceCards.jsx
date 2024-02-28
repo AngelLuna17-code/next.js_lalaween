@@ -1,4 +1,5 @@
 'use client';
+'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
 
@@ -75,6 +76,7 @@ const ServiceCards = () => {
                         {/* Botón para abrir el modal */}
                         <div>
                             <button
+                                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                                 onClick={() => handleOpenModal(index)}>
                                 Abrir modal
                             </button>
@@ -82,23 +84,23 @@ const ServiceCards = () => {
                         {/* Botón para abrir el modal */}
                         {/* Modal */}
                         {openModalIndex === index && (
-                            <div className="modal-overlay z-10" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
-                                <div className="modal bg-black">
+                            <div className="modal-overlay z-10 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+                                <div className="modal bg-black p-8 rounded-[15px] min-w-[900px] w-[1300px]"style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
                                     {/* header del modal */}
                                     <div>
-                                        <h2>{item.title}</h2>
+                                        <h2 className="text-white">{item.title}</h2>
                                     </div>
                                     {/* header del modal */}
                                     {/* Botón para cerrar el modal */}
                                     <button
-                                        className="close-btn"
+                                        className="close-btn absolute top-0 right-0 text-white bg-transparent border-none cursor-pointer"
                                         onClick={handleCloseModal}>
                                         X
                                     </button>
                                     {/* Botón para cerrar el modal */}
                                     {/* Contenido del modal */}
                                     <div>
-                                        <p>Contenido del modal</p>
+                                        <p className="text-white">Contenido del modal</p>
                                     </div>
                                     {/* Contenido del modal */}
                                     {/* footer del modal */}
@@ -106,7 +108,7 @@ const ServiceCards = () => {
                                         {/* Botón para cerrar el modal */}
                                         <div>
                                             <button
-                                                className="close-modal-btn"
+                                                className="close-modal-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                                                 onClick={handleCloseModal}>
                                                 Cerrar
                                             </button>
