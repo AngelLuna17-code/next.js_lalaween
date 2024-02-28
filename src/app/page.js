@@ -1,5 +1,6 @@
 import Stars from "../../components/Stars";
 import Hero from "../../components/Hero"
+import ServiceCards from "../../components/ServiceCards";
 import CarruselPortafolio from "../../components/CarruselPortafolio"
 import Mapa from "../../components/Mapa";
 import Contacto from "../../components/Contacto";
@@ -14,6 +15,9 @@ export default function Home() {
         {/* Hero */}
         <Hero />
         {/* Hero */}
+        {/* ServiceCards */}
+        <ServiceCards />
+        {/* ServiceCards */}
         {/* Portafolio */}
         <CarruselPortafolio />
         {/* Portafolio */}
