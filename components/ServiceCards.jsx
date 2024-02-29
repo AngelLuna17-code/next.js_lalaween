@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -8,6 +8,20 @@ import CardAnimatedText from './CardAnimatedText';
 
 const ServiceCards = () => {
     const [openModalIndex, setOpenModalIndex] = useState(null);
+
+    useEffect(() => {
+        const handleEsc = (event) => {
+            if (event.keyCode === 27) {
+                handleCloseModal();
+            }
+        };
+
+        window.addEventListener('keydown', handleEsc);
+
+        return () => {
+            window.removeEventListener('keydown', handleEsc);
+        };
+    }, []);
 
     const handleOpenModal = (index) => {
         setOpenModalIndex(index);
@@ -66,6 +80,7 @@ const ServiceCards = () => {
             bgColor: "rgba(0, 0, 0, 0.7)",
         },
     ];
+
 
     const settings = {
         infinite: true,
@@ -166,16 +181,14 @@ const ServiceCards = () => {
                         </div>
                         {/* Contenido del modal */}
                         {/* footer del modal */}
-                        <div>
+                        <div className='p-5'>
                             {/* Botón para cerrar el modal */}
-                            <div>
-                                <div className=''>
-                                    <button
-                                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                                        onClick={handleCloseModal}>
-                                        Cerrar
-                                    </button>
-                                </div>
+                            <div className='flex justify-end'>
+                                <button
+                                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                                    onClick={handleCloseModal}>
+                                    Cerrar
+                                </button>
                             </div>
                             {/* Botón para cerrar el modal */}
                         </div>
