@@ -76,40 +76,42 @@ const ServiceCards = () => {
 
     return (
         <section>
-            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 py-[50px] lg:py-[100px] px-[10px]'>
+            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 py-[50px] lg:py-[100px] px-[15px]'>
                 {/* Cards */}
                 {list.map((item, index) => (
                     <div className="rounded-[15px]" key={index} style={{ backgroundColor: item.bgColor }}>
-                        <div className='text-center p-5'>
-                            <p className='title text-2xl'>
-                                {item.title}
-                            </p>
-                            <Image
-                                className='mx-auto mt-3'
-                                height={100}
-                                width={100}
-                                src={item.icon}
-                                alt={item.title}
-                                loading="lazy"
-                            />
-                            <div className='mt-3'>
-                                {index === 2 && (
-                                    <CardAnimatedText />
-                                )}
+                        <div className='text-center h-[400px] p-4 flex items-center overflow-hidden'>
+                            <div>
+                                <p className='title text-2xl'>
+                                    {item.title}
+                                </p>
+                                <Image
+                                    className='mx-auto mt-3'
+                                    height={100}
+                                    width={100}
+                                    src={item.icon}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                                <div className='mt-3'>
+                                    {index === 2 && (
+                                        <CardAnimatedText />
+                                    )}
+                                </div>
+                                <p className='font-black mt-3'>
+                                    {item.sub}
+                                </p>
+                                <p className='mt-3'>
+                                    {item.text}
+                                </p>
                             </div>
-                            <p className='font-black mt-3'>
-                                {item.sub}
-                            </p>
-                            <p className='mt-3'>
-                                {item.text}
-                            </p>
                         </div>
                         {/* abrir modal */}
                         <div className='relative cursor-pointer' onClick={() => handleOpenModal(index)}>
                             <Image
                                 className='rounded-b-[15px]'
                                 height={0}
-                                width={500}
+                                width={750}
                                 src={`/cards/card-${index + 1}.webp`}
                                 alt="servicios"
                                 loading="lazy"
