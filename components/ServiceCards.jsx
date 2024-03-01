@@ -91,7 +91,7 @@ const ServiceCards = () => {
 
     return (
         <section>
-            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 py-[50px] lg:py-[100px] px-[15px]'>
+            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 py-[50px] px-[15px]'>
                 {/* Cards */}
                 {list.map((item, index) => (
                     <div className="rounded-[15px]" key={index} style={{ backgroundColor: item.bgColor }}>

@@ -22,9 +22,6 @@ export default function Home() {
         {/* ServiceCards */}
         <ServiceCards />
         {/* ServiceCards */}
-        {/* Portafolio */}
-        <CarruselPortafolio />
-        {/* Portafolio */}
         {/* Mapa */}
         <Mapa />
         {/* Mapa */}
