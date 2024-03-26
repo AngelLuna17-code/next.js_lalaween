@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 const Card = () => {
   const [cards, setCards] = useState([
+    /* Pa' que le emprendas */
     {
       id: 1,
       /* Front Card */
@@ -17,17 +18,52 @@ const Card = () => {
       buttonLink: "/"
       /* Back Card */
     },
+    /* Pa' que le emprendas */
+    /* Pa' queten bien informados */
     {
       id: 2,
-      title: "Paquete 2",
-      description: "Descripción del paquete 2",
-      proposito: "",
-      oldPrice: "",
-      newPrice: "",
-
+      /* Front Card */
+      title: "Pa' queten bien informados",
+      description: "Ante una incognita se la solución",
+      oldPrice: "$5,800.00 + IVA * Mes",
+      newPrice: "3,780.00 + IVA * Mes",
+      /* Front Card */
+      /* Back Card */
+      proposito: "Diseñar y ejecutar de manera efectiva campañas publicitarias e informativas sin que la marca pierda su esencia y autenticidad, a través de un lanzamiento positivo en redes sociales con diseños óptimos y atractivos para el nicho de mercado al que su negocio desee llegar",
       buttonLink: "/"
+      /* Back Card */
     },
-    // Puedes agregar más objetos para más tarjetas
+    /* Pa' queten bien informados */
+    /* Pa' quete encuentren siempre */
+    {
+      id: 3,
+      /* Front Card */
+      title: "Pa' quete encuentren siempre",
+      description: "Ante la duda una solución",
+      oldPrice: "$26,950.00 + IVA * Mes",
+      newPrice: "$15,950.00 + IVA * Mes",
+      /* Front Card */
+      /* Back Card */
+      proposito: "Mejorar la experiencia de sus usuarios y lograr un mayor alcance, con un máximo nivel de exposición posible para cumplir satisfactoriamente las necesidades de su nicho; conservando la autenticidad y personalidad de su marca, a través de un lanzamiento activo en redes sociales e implementación de su página web.",
+      buttonLink: "/"
+      /* Back Card */
+    },
+    /* Pa' quete encuentren siempre */
+    /* Pa' que economices */
+    {
+      id: 4,
+      /* Front Card */
+      title: "Pa' que economices",
+      description: "Inicia tu presencia en redes sociales y crece tu negocio",
+      oldPrice: "$5,250.00 + IVA * Mes",
+      newPrice: "$2,625.00 + IVA * Mes",
+      /* Front Card */
+      /* Back Card */
+      proposito: "Porque sabemos que vas empezando, pero el diseño no es lo tuyo o no tienes tiempo de crear contenido, con esto buscamos crear diseños atractivos y funcionales que le den el toque profesional a las redes sociales de tu negocio",
+      buttonLink: "/"
+      /* Back Card */
+    },
+    /* Pa' que economices */
   ]);
 
   const [isFlipped, setIsFlipped] = useState([]);
@@ -42,7 +78,7 @@ const Card = () => {
     <section className='py-[50px] px-[15px]'>
       <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5'>
         {cards.map((card, index) => (
-          <div key={card.id} className={`card mx-auto ${isFlipped[index] ? 'flipped' : ''}`} onClick={() => handleCardClick(index)}>
+          <div key={card.id} className={`card mx-auto cursor-pointer ${isFlipped[index] ? 'flipped' : ''}`} onClick={() => handleCardClick(index)}>
             <div className="card-inner">
               {/* Front */}
               <div className="card-front rounded-[15px] flex items-center justify-center" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
@@ -80,7 +116,7 @@ const Card = () => {
                   <div className='flex justify-center mt-5'>
                     <Link href={card.buttonLink}>
                       <button className='px-[15px] py-[10px] bg-[#006d6a] hover:bg-[#005351] font-bold rounded-[10px]'>
-                      Más información
+                        Más información
                       </button>
                     </Link>
                   </div>

@@ -129,11 +129,13 @@ iframe {
   height: 300px;
   perspective: 1000px;
 }
+
 @media (min-width: 640px) {
   .card {
     width: 400px;
   }
 }
+
 @media (min-width: 1024px) {
   .card {
     width: 100%;
