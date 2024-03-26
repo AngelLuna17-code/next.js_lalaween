@@ -64,19 +64,19 @@ const Card = () => {
       /* Back Card */
     },
     /* Pa' que economices */
-        /* Pa' quete des a conocer */
-        {
-          id: 5,
-          /* Front Card */
-          title: "Pa' que economices",
-          description: "Inicia tu presencia en redes sociales y crece tu negocio",
-          /* Front Card */
-          /* Back Card */
-          proposito: "Diseñar, generar y ejecutar las bases para comenzar a promocionar tus servicios y/o productos en el mercado, estudiando y planteando estrategias según el análisis obtenido en redes sociales, dando a conocer y dejando al alcance de todos la comunicación directa y fluida con tu negocio en el mundo digita",
-          buttonLink: "/"
-          /* Back Card */
-        },
-        /* Pa' quete des a conocer */
+    /* Pa' quete des a conocer */
+    {
+      id: 5,
+      /* Front Card */
+      title: "Pa' que economices",
+      description: "Inicia tu presencia en redes sociales y crece tu negocio",
+      /* Front Card */
+      /* Back Card */
+      proposito: "Diseñar, generar y ejecutar las bases para comenzar a promocionar tus servicios y/o productos en el mercado, estudiando y planteando estrategias según el análisis obtenido en redes sociales, dando a conocer y dejando al alcance de todos la comunicación directa y fluida con tu negocio en el mundo digita",
+      buttonLink: "/"
+      /* Back Card */
+    },
+    /* Pa' quete des a conocer */
   ]);
 
   const [isFlipped, setIsFlipped] = useState([]);
@@ -105,12 +105,14 @@ const Card = () => {
                     </p>
                   </div>
                   <div className='text-center text-white mt-5 typing font-thin'>
-                    <div>
-                      <p className='line-through'>COSTO REAL</p>
-                      <p className='line-through'>{card.oldPrice}</p>
-                      <p className='text-[#00a09b]'>COSTO PROMOCIONAL</p>
-                      <p>{card.newPrice}</p>
-                    </div>
+                    {card.id !== 5 && (
+                      <div className='precio'>
+                        <p className='line-through'>COSTO REAL</p>
+                        <p className='line-through'>{card.oldPrice}</p>
+                        <p className='text-[#00a09b]'>COSTO PROMOCIONAL</p>
+                        <p>{card.newPrice}</p>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
