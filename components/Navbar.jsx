@@ -51,15 +51,14 @@ const Navbar = () => {
             {/* Links */}
             <div className='overflow-hidden hidden lg:flex items-center px-10'>
               <ul className='list-none flex items-center space-x-12'>
-
                 <Link href="/" className="text-white hover:text-[#00cac4]">
                   Inicio
                 </Link>
-                <Link href="/" className="text-white hover:text-[#00cac4]">
-                  Servicios
+                <Link href="/#about" className="text-white hover:text-[#00cac4]">
+                  Nosotros
                 </Link>
-                <Link href="/" className="text-white hover:text-[#00cac4]">
-                  Productos
+                <Link href="/#servicios" className="text-white hover:text-[#00cac4]">
+                  Servicios
                 </Link>
                 <Link href="/Facturas" className="text-white hover:text-[#00cac4]">
                   Facturas
@@ -134,22 +133,20 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="lg:hidden mt-2 p-2">
             <ul className='list-none space-y-2'>
-
-              <li className="text-white hover:text-[#00cac4]" to="/" onClick={closeMenuOnClick}>
+              <li className="text-white hover:text-[#00cac4]" href="/" onClick={closeMenuOnClick}>
                 Inicio
               </li>
-
-              <li className="text-white hover:text-[#00cac4]" to="/" onClick={closeMenuOnClick}>
-                Inicio
+              <li className="text-white hover:text-[#00cac4]" href="/#about" onClick={closeMenuOnClick}>
+                Nosotros
               </li>
-              <li className="text-white hover:text-[#00cac4]" to="/" onClick={closeMenuOnClick}>
-                Inicio
+              <li className="text-white hover:text-[#00cac4]" href="/#servicios" onClick={closeMenuOnClick}>
+                Servicios
               </li>
-              <li className="text-white hover:text-[#00cac4]" to="/" onClick={closeMenuOnClick}>
-                Inicio
+              <li className="text-white hover:text-[#00cac4]" href="/Facturas" onClick={closeMenuOnClick}>
+                Facturas
               </li>
-              <li className="text-white hover:text-[#00cac4]" to="/" onClick={closeMenuOnClick}>
-                Inicio
+              <li className="text-white hover:text-[#00cac4]" href="/Promociones" onClick={closeMenuOnClick}>
+                Promociones
               </li>
             </ul>
           </div>
