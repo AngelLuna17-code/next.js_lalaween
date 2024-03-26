@@ -64,6 +64,19 @@ const Card = () => {
       /* Back Card */
     },
     /* Pa' que economices */
+        /* Pa' quete des a conocer */
+        {
+          id: 5,
+          /* Front Card */
+          title: "Pa' que economices",
+          description: "Inicia tu presencia en redes sociales y crece tu negocio",
+          /* Front Card */
+          /* Back Card */
+          proposito: "Diseñar, generar y ejecutar las bases para comenzar a promocionar tus servicios y/o productos en el mercado, estudiando y planteando estrategias según el análisis obtenido en redes sociales, dando a conocer y dejando al alcance de todos la comunicación directa y fluida con tu negocio en el mundo digita",
+          buttonLink: "/"
+          /* Back Card */
+        },
+        /* Pa' quete des a conocer */
   ]);
 
   const [isFlipped, setIsFlipped] = useState([]);
@@ -103,7 +116,7 @@ const Card = () => {
               </div>
               {/* Front */}
               {/* Back */}
-              <div className="card-back rounded-[15px] flex items-center justify-center p-3" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
+              <div className="card-back rounded-[15px] flex items-center justify-center p-3 lg:p-5" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
                 <div>
                   <div className='overflow-'>
                     <p className='text-[#00a09b] typing text-xl'>
