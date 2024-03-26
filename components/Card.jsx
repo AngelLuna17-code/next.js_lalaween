@@ -43,6 +43,7 @@ const Card = () => {
             {/* Back */}
             <div className="card-back rounded-[15px] flex items-center justify-center p-3" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
               <div>
+                <div className='overflow-'>
                 <p className='text-[#00a09b] typing text-xl'>
                   Proposito
                 </p>
@@ -52,6 +53,8 @@ const Card = () => {
                   en redes sociales e impresos con diseños óptimos y atractivos para el nicho de mercado al que su negocio
                   desee llegar, sin perder su autenticidad.
                 </p>
+                </div>
+       
                 {/* Button */}
                 <div className='flex justify-center mt-5'>
                   <Link href="/">
