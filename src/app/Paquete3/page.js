@@ -10,7 +10,7 @@ const Paquete3 = () => {
                     <div className='text-white'>
                         <div>
                             <h3 className='text-[#00a09b] font-black text-[23px] typing'>
-                                Pa' quete encuentren siempre
+                                Pa &apos; quete encuentren siempre
                             </h3>
                             <p>
                                 Ante la duda una solución
@@ -46,7 +46,7 @@ const Paquete3 = () => {
                     </div>
                     <div className='mt-5'>
                         <p className='text-[#00a09b] typing'>
-                            ¿Qué servicios incluye?"
+                            ¿Qué servicios incluye?
                         </p>
                         <div>
                             <ul className='typing'>

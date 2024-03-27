@@ -11,7 +11,7 @@ const Paquete5 = () => {
                     <div className='text-white'>
                         <div>
                             <h3 className='text-[#00a09b] font-black text-[23px] typing'>
-                                Pa' quete des a conocer
+                                Pa &apos; quete des a conocer
                             </h3>
                             <p>
                                 Inicia tu presencia en redes sociales y crece tu negocio

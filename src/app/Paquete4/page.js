@@ -10,7 +10,7 @@ const Paquete4 = () => {
                     <div className='text-white'>
                         <div>
                             <h3 className='text-[#00a09b] font-black text-[23px] typing'>
-                                Pa' que economices
+                                Pa &apos; que economices
                             </h3>
                             <p>
                                 Inicia tu presencia en redes sociales y crece tu negocio
@@ -42,7 +42,7 @@ const Paquete4 = () => {
                     </div>
                     <div className='mt-5'>
                         <p className='text-[#00a09b] typing'>
-                            ¿Qué servicios incluye?"
+                            ¿Qué servicios incluye?
                         </p>
                         <div>
                             <ul className='typing'>
