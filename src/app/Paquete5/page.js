@@ -52,7 +52,7 @@ const Paquete5 = () => {
                     <div className='mt-5'>
                         <div>
                             <p className='text-[#00a09b] typing'>
-                                Pa’ que le empieces
+                                Pa &#39; que le empieces
                             </p>
                         </div>
                         <div className='grid grid-cols-1 lg:grid-cols-2'>
@@ -90,7 +90,7 @@ const Paquete5 = () => {
                     <div className='mt-8'>
                         <div>
                             <p className='text-[#00a09b] typing'>
-                                Pa’ que te quieran
+                                Pa&#39; que te quieran
                             </p>
                         </div>
                         <div className='grid grid-cols-1 lg:grid-cols-2'>
@@ -131,7 +131,7 @@ const Paquete5 = () => {
                     <div className='mt-8'>
                         <div>
                             <p className='text-[#00a09b] typing'>
-                                Pa’ que sueñen
+                                Pa&#39; que sueñen
                             </p>
                         </div>
                         <div className='grid grid-cols-1 lg:grid-cols-2'>
