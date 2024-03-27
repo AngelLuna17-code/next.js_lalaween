@@ -1,11 +1,12 @@
+import Accordion from '../../../components/Accordion';
 import SmallStars from '../../../components/SmallStars';
 
 const Paquete5 = () => {
 
     return (
-        <section>
+        <section className='py-[100px] px-[10px]'>
             <SmallStars />
-            <div className='container mx-auto py-[100px] px-[10px]'>
+            <div className='container mx-auto'>
                 <div className='p-5 rounded-lg' style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
                     <div className='text-white'>
                         <div>
@@ -182,6 +183,14 @@ const Paquete5 = () => {
                         </div>
                     </div>
                     {/* Pa’ que sueñen */}
+                </div>
+                <div className='mt-5'>
+                    <p className='text-center typing'>
+                        Terminos y condiciones
+                    </p>
+                    <div className='mt-1'>
+                        <Accordion />
+                    </div>
                 </div>
             </div>
         </section>
