@@ -30,7 +30,7 @@ const Card = () => {
       /* Front Card */
       /* Back Card */
       proposito: "Diseñar y ejecutar de manera efectiva campañas publicitarias e informativas sin que la marca pierda su esencia y autenticidad, a través de un lanzamiento positivo en redes sociales con diseños óptimos y atractivos para el nicho de mercado al que su negocio desee llegar",
-      buttonLink: "/"
+      buttonLink: "/Paquete2"
       /* Back Card */
     },
     /* Pa' queten bien informados */
@@ -45,7 +45,7 @@ const Card = () => {
       /* Front Card */
       /* Back Card */
       proposito: "Mejorar la experiencia de sus usuarios y lograr un mayor alcance, con un máximo nivel de exposición posible para cumplir satisfactoriamente las necesidades de su nicho; conservando la autenticidad y personalidad de su marca, a través de un lanzamiento activo en redes sociales e implementación de su página web.",
-      buttonLink: "/"
+      buttonLink: "/Paquete3"
       /* Back Card */
     },
     /* Pa' quete encuentren siempre */
@@ -60,7 +60,7 @@ const Card = () => {
       /* Front Card */
       /* Back Card */
       proposito: "Porque sabemos que vas empezando, pero el diseño no es lo tuyo o no tienes tiempo de crear contenido, con esto buscamos crear diseños atractivos y funcionales que le den el toque profesional a las redes sociales de tu negocio",
-      buttonLink: "/"
+      buttonLink: "/Paquete4"
       /* Back Card */
     },
     /* Pa' que economices */
@@ -73,7 +73,7 @@ const Card = () => {
       /* Front Card */
       /* Back Card */
       proposito: "Diseñar, generar y ejecutar las bases para comenzar a promocionar tus servicios y/o productos en el mercado, estudiando y planteando estrategias según el análisis obtenido en redes sociales, dando a conocer y dejando al alcance de todos la comunicación directa y fluida con tu negocio en el mundo digita",
-      buttonLink: "/"
+      buttonLink: "/Paquete5"
       /* Back Card */
     },
     /* Pa' quete des a conocer */
