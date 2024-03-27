@@ -10,7 +10,7 @@ const Paquete1 = () => {
                     <div className='text-white'>
                         <div>
                             <h3 className='text-[#00a09b] font-black text-[23px] typing'>
-                                Pa&apos; que le emprendas
+                                Pa &apos; que le emprendas
                             </h3>
                             <p>En sus marcas, listos... ¡¡Fuera!!</p>
                         </div>
