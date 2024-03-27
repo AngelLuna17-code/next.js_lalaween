@@ -133,22 +133,33 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="lg:hidden mt-2 p-2">
             <ul className='list-none space-y-2'>
-              <li className="text-white hover:text-[#00cac4]" href="/" onClick={closeMenuOnClick}>
-                Inicio
+              <li>
+                <Link className="text-white hover:text-[#00cac4]" href="/" onClick={closeMenuOnClick}>
+                  Inicio
+                </Link>
               </li>
-              <li className="text-white hover:text-[#00cac4]" href="/#about" onClick={closeMenuOnClick}>
-                Nosotros
+              <li>
+                <Link className="text-white hover:text-[#00cac4]" href="/#about" onClick={closeMenuOnClick}>
+                  Nosotros
+                </Link>
               </li>
-              <li className="text-white hover:text-[#00cac4]" href="/#servicios" onClick={closeMenuOnClick}>
-                Servicios
+              <li>
+                <Link className="text-white hover:text-[#00cac4]" href="/#servicios" onClick={closeMenuOnClick}>
+                  Servicios
+                </Link>
               </li>
-              <li className="text-white hover:text-[#00cac4]" href="/Facturas" onClick={closeMenuOnClick}>
-                Facturas
+              <li>
+                <Link className="text-white hover:text-[#00cac4]" href="/Facturas" onClick={closeMenuOnClick}>
+                  Facturas
+                </Link>
               </li>
-              <li className="text-white hover:text-[#00cac4]" href="/Promociones" onClick={closeMenuOnClick}>
-                Promociones
+              <li>
+                <Link className="text-white hover:text-[#00cac4]" href="/Promociones" onClick={closeMenuOnClick}>
+                  Promociones
+                </Link>
               </li>
             </ul>
+
           </div>
         )}
         {/* Dropdown */}
