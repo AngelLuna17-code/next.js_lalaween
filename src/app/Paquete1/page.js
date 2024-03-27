@@ -10,7 +10,7 @@ const Paquete1 = () => {
                     <div className='text-white'>
                         <div>
                             <h3 className='text-[#00a09b] font-black text-[23px] typing'>
-                                Pa&#39; que le emprendas
+                                Pa&apos; que le emprendas
                             </h3>
                             <p>En sus marcas, listos... ¡¡Fuera!!</p>
                         </div>
@@ -44,7 +44,7 @@ const Paquete1 = () => {
                     </div>
                     <div className='mt-5'>
                         <p className='text-[#00a09b] typing'>
-                            ¿Qué servicios incluye?"
+                            ¿Qué servicios incluye?
                         </p>
                         <div>
                             <ul className='typing'>
