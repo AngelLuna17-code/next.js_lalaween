@@ -179,3 +179,18 @@ iframe {
 }
 
 /* Card¡*/
+
+.paq-hero {
+  background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../../public/paq-hero.webp);
+}
+
+.hero-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  background-position: 50% 50%;
+  overflow: hidden;
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
+  background-attachment: fixed;
+}
