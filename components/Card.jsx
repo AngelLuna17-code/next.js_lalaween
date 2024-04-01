@@ -1,6 +1,9 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Card = () => {
   const [cards, setCards] = useState([
@@ -51,80 +54,126 @@ const Card = () => {
 
   const [isFlipped, setIsFlipped] = useState([]);
 
-  const handleCardClick = (index) => {
-    const newFlippedState = [...isFlipped];
-    newFlippedState[index] = !newFlippedState[index];
-    setIsFlipped(newFlippedState);
-  };
-
   const handleButtonClick = (index) => {
     const newFlippedState = [...isFlipped];
     newFlippedState[index] = !newFlippedState[index];
     setIsFlipped(newFlippedState);
   };
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '60px',
+    responsive: [
+      {
+        breakpoint: 1280, // xl breakpoint
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerPadding: '60px',
+        },
+      },
+      {
+        breakpoint: 1024, // lg breakpoint
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerPadding: '30px',
+        },
+      },
+      {
+        breakpoint: 768, // md breakpoint
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: '120px',
+        },
+      },
+      {
+        breakpoint: 640, // sm breakpoint
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '60px',
+        },
+      },
+      {
+        breakpoint: 360, // xs breakpoint
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '0px',
+        },
+      },
+    ],
+  };
+
   return (
     <section className='py-[50px] px-[15px]'>
-      <div className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5'>
-        {cards.map((card, index) => (
-          <div key={card.id} className={`card mx-auto ${isFlipped[index] ? 'flipped' : ''}`}>
-            <div className="card-inner">
-              <div className="card-front rounded-[15px] flex items-center justify-center" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
-                <div>
-                  <div className='text-center'>
-                    <h3 className='text-[#00a09b] font-black text-[23px] typing'>
-                      {card.title}
-                    </h3>
-                    <p>
-                      {card.description}
-                    </p>
-                  </div>
-                  <div className='text-center text-white mt-5 typing font-thin'>
-                    {card.id !== 5 && (
-                      <div className='precio'>
-                        <p className='line-through'>COSTO REAL</p>
-                        <p className='line-through'>{card.oldPrice}</p>
-                        <p className='text-[#00a09b]'>COSTO PROMOCIONAL</p>
-                        <p>{card.newPrice}</p>
-                      </div>
-                    )}
-                  </div>
-                  <div className='flex justify-center'>
-                    <button className="flip-button mt-5 px-[15px] py-[10px] bg-[#006d6a] hover:bg-[#005351] font-bold rounded-[10px]" onClick={() => handleButtonClick(index)}>
-                      Más información
-                    </button>
+      <div className='container mx-auto'>
+        <Slider className='w-[85%] lg:w-[95%] mx-auto' {...settings}>
+          {cards.map((card, index) => (
+            <div key={card.id} className={`card mx-auto ${isFlipped[index] ? 'flipped' : ''}`}>
+              <div className="card-inner">
+                <div className="card-front rounded-[15px] p-2 flex items-center justify-center" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
+                  <div>
+                    <div className='text-center'>
+                      <h3 className='text-[#00a09b] font-black text-[23px] typing'>
+                        {card.title}
+                      </h3>
+                      <p>
+                        {card.description}
+                      </p>
+                    </div>
+                    <div className='text-center text-white mt-5 typing font-thin'>
+                      {card.id !== 5 && (
+                        <div className='precio'>
+                          <p className='line-through'>COSTO REAL</p>
+                          <p className='line-through'>{card.oldPrice}</p>
+                          <p className='text-[#00a09b]'>COSTO PROMOCIONAL</p>
+                          <p>{card.newPrice}</p>
+                        </div>
+                      )}
+                    </div>
+                    <div className='flex justify-center'>
+                      <button className="flip-button mt-5 px-[15px] py-[10px] bg-[#006d6a] hover:bg-[#005351] font-bold rounded-[10px]" onClick={() => handleButtonClick(index)}>
+                        Más información
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="card-back rounded-[15px] flex items-center justify-center p-3 lg:p-5" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
-                <div>
-                  <div className='overflow-'>
-                    <p className='text-[#00a09b] typing text-xl'>
-                      Propósito
-                    </p>
-                    <p>
-                      {card.proposito}
-                    </p>
-                  </div>
-                  <div className='flex justify-center mt-5'>
-                    <Link href={card.buttonLink}>
-                      <button className='px-[15px] py-[10px] bg-[#006d6a] hover:bg-[#005351] font-bold rounded-[10px]'>
-                        Ver paquete
+                <div className="card-back rounded-[15px] flex items-center justify-center p-3 lg:p-5" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
+                  <div>
+                    <div className='overflow-'>
+                      <p className='text-[#00a09b] typing text-xl'>
+                        Propósito
+                      </p>
+                      <p>
+                        {card.proposito}
+                      </p>
+                    </div>
+                    <div className='flex justify-center mt-5'>
+                      <Link href={card.buttonLink}>
+                        <button className='px-[15px] py-[10px] bg-[#006d6a] hover:bg-[#005351] font-bold rounded-[10px]'>
+                          Ver paquete
+                        </button>
+                      </Link>
+                    </div>
+                    <div className='text-right'>
+                      <button className="flip-button mt-5" onClick={() => handleButtonClick(index)}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg>
                       </button>
-                    </Link>
-                  </div>
-                  <div className='text-right'>
-                    <button className="flip-button mt-5" onClick={() => handleButtonClick(index)}>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                      </svg>
-                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </Slider>
       </div>
     </section>
   );
