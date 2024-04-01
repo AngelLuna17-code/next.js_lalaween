@@ -81,7 +81,6 @@ const ServiceCards = () => {
         },
     ];
 
-
     const settings = {
         infinite: true,
         speed: 500,
