@@ -94,7 +94,7 @@ const ServiceCards = () => {
             <div id="servicios" className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 py-[50px] px-[15px]'>
                 {/* Cards */}
                 {list.map((item, index) => (
-                    <div className="rounded-[15px]" key={index} style={{ backgroundColor: item.bgColor }}>
+                    <div className="rounded-[15px] sm:w-[65%] lg:w-full mx-auto" key={index} style={{ backgroundColor: item.bgColor }}>
                         <div className='text-center h-[400px] p-4 flex items-center overflow-hidden'>
                             <div>
                                 <p className='title text-2xl'>
