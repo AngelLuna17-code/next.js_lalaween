@@ -89,8 +89,8 @@ const ServiceCards = () => {
     };
 
     return (
-        <section>
-            <div id="servicios" className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 py-[50px] px-[15px]'>
+        <section className='py-[50px] px-[15px]'>
+            <div id="servicios" className='container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5'>
                 {/* Cards */}
                 {list.map((item, index) => (
                     <div className="rounded-[15px] sm:w-[65%] lg:w-full mx-auto" key={index} style={{ backgroundColor: item.bgColor }}>
