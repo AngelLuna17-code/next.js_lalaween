@@ -6,6 +6,7 @@ const Paquete3 = () => {
     return (
         <section>
             <SmallStars />
+            {/* Hero */}
             <div className="paqs-hero hero-bg py-[130px]">
                 <div className="container mx-auto px-[15px]">
                     <h1>
@@ -16,6 +17,7 @@ const Paquete3 = () => {
                     </p>
                 </div>
             </div>
+            {/* Hero */}
             <div className='container mx-auto py-[50px] px-[10px]'>
                 <div className='p-5 rounded-lg' style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
                     <div className='text-white'>
