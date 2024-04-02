@@ -1,4 +1,5 @@
 import SmallStars from "../../../components/SmallStars";
+import Accordion from "../../../components/Accordion";
 
 const Paquete1 = () => {
 
@@ -107,6 +108,14 @@ const Paquete1 = () => {
                         <p className='line-through'>$8,100.00 + IVA</p>
                         <p className='text-[#00a09b]'>COSTO PROMOCIONAL</p>
                         <p>$3,500.00 + IVA</p>
+                    </div>
+                </div>
+                <div className='mt-5'>
+                    <p className='text-center typing'>
+                        Terminos y condiciones
+                    </p>
+                    <div className='mt-1'>
+                        <Accordion />
                     </div>
                 </div>
             </div>
