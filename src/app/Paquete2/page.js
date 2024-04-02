@@ -6,19 +6,23 @@ const Paquete2 = () => {
     return (
         <section>
             <SmallStars />
-            <div className='container mx-auto py-[100px] px-[10px]'>
+            <div className="paqs-hero hero-bg py-[130px]">
+                <div className="container mx-auto px-[15px]">
+                    <h1>
+                        Pa &apos; queten bien informados
+                    </h1>
+                    <p className="text-xl">
+                        Ante una incognita se la solución
+                    </p>
+                </div>
+            </div>
+            <div className='container mx-auto py-[50px] px-[10px]'>
                 <div className='p-5 rounded-lg' style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
                     <div className='text-white'>
                         <div>
-                            <h3 className='text-[#00a09b] font-black text-[23px] typing'>
-                                Pa &apos; queten bien informados
-                            </h3>
-                            <p>
-                                Ante una incognita se la solución
+                            <p className='text-[#00a09b] typing text-lg'>
+                                Proposito
                             </p>
-                        </div>
-                        <div className='mt-5'>
-                            <p className='text-[#00a09b] typing'>Proposito</p>
                             <p>
                                 Diseñar y ejecutar de manera efectiva campañas publicitarias e informativas sin que la marca pierda su
                                 esencia y autenticidad, a través de un lanzamiento positivo en redes sociales con diseños óptimos y atractivos para el nicho de mercado al que su negocio desee llegar.
@@ -26,7 +30,7 @@ const Paquete2 = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <p className='text-[#00a09b] typing'>
+                        <p className='text-[#00a09b] typing text-lg'>
                             ¿Que implica?
                         </p>
                         <div>
@@ -42,7 +46,7 @@ const Paquete2 = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <p className='text-[#00a09b] typing'>
+                        <p className='text-[#00a09b] typing text-lg'>
                             ¿Qué servicios incluye?
                         </p>
                         <div>
@@ -66,7 +70,7 @@ const Paquete2 = () => {
                             </ul>
                         </div>
                         <div className='mt-5'>
-                            <p className='text-[#00a09b] typing'>
+                            <p className='text-[#00a09b] typing text-lg'>
                                 ¿Qué beneficios incluye?
                             </p>
                             <div>
