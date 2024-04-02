@@ -55,7 +55,7 @@ const Paquete5 = () => {
                                 Pa &#39; que le empieces
                             </p>
                         </div>
-                        <div className='grid grid-cols-1 lg:grid-cols-2'>
+                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                             <div>
                                 <ul className='typing'>
                                     <li>
@@ -93,7 +93,7 @@ const Paquete5 = () => {
                                 Pa&#39; que te quieran
                             </p>
                         </div>
-                        <div className='grid grid-cols-1 lg:grid-cols-2'>
+                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                             <div>
                                 <ul className='typing'>
                                     <li>
@@ -134,7 +134,7 @@ const Paquete5 = () => {
                                 Pa&#39; que sueñen
                             </p>
                         </div>
-                        <div className='grid grid-cols-1 lg:grid-cols-2'>
+                        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                             <div>
                                 <ul className='typing'>
                                     <li>

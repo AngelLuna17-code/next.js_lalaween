@@ -6,17 +6,19 @@ const Paquete1 = () => {
     return (
         <section>
             <SmallStars />
-            <div className='container mx-auto py-[100px] px-[10px]'>
+            <div className="paqs-hero hero-bg py-[130px]">
+                <div className="container mx-auto px-[15px]">
+                    <h1>
+                        Pa &apos; que le emprendas
+                    </h1>
+                    <p className="text-xl">En sus marcas, listos... ¡¡Fuera!!</p>
+                </div>
+            </div>
+            <div className='container mx-auto py-[50px] px-[10px]'>
                 <div className='p-5 rounded-lg' style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
                     <div className='text-white'>
                         <div>
-                            <h3 className='text-[#00a09b] font-black text-[23px] typing'>
-                                Pa &apos; que le emprendas
-                            </h3>
-                            <p>En sus marcas, listos... ¡¡Fuera!!</p>
-                        </div>
-                        <div className='mt-5'>
-                            <p className='text-[#00a09b] typing'>Proposito</p>
+                            <p className='text-[#00a09b] typing text-lg'>Proposito</p>
                             <p>
                                 Diseñar para comunicar de manera efectiva la personalidad, esencia e identidad de tu marca.
                                 Para generar un lanzamiento positivo desde la creación de su logotipo y a través de campañas publicitarias
@@ -26,7 +28,7 @@ const Paquete1 = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <p className='text-[#00a09b] typing'>
+                        <p className='text-[#00a09b] typing text-lg'>
                             ¿Que implica?
                         </p>
                         <div>
@@ -44,7 +46,7 @@ const Paquete1 = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <p className='text-[#00a09b] typing'>
+                        <p className='text-[#00a09b] typing text-lg'>
                             ¿Qué servicios incluye?
                         </p>
                         <div>
@@ -79,7 +81,7 @@ const Paquete1 = () => {
                             </ul>
                         </div>
                         <div className='mt-5'>
-                            <p className='text-[#00a09b] typing'>
+                            <p className='text-[#00a09b] typing text-lg'>
                                 ¿Qué beneficios incluye?
                             </p>
                             <div>
