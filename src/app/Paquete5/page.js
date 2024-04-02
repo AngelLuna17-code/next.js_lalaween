@@ -4,21 +4,26 @@ import SmallStars from '../../../components/SmallStars';
 const Paquete5 = () => {
 
     return (
-        <section className='py-[100px] px-[10px]'>
-            <SmallStars />
-            <div className='container mx-auto'>
+        <section>
+            {/* Hero */}
+            <div className="paqs-hero hero-bg py-[130px]">
+                <div className="container mx-auto px-[15px]">
+                    <h1>
+                        Pa &apos; quete des a conocer
+                    </h1>
+                    <p className="text-xl">
+                        Inicia tu presencia en redes sociales y crece tu negocio
+                    </p>
+                </div>
+            </div>
+            {/* Hero */}
+            <div className='container mx-auto px-[15px] py-[50px]'>
                 <div className='p-5 rounded-lg' style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
                     <div className='text-white'>
                         <div>
-                            <h3 className='text-[#00a09b] font-black text-[23px] typing'>
-                                Pa &apos; quete des a conocer
-                            </h3>
-                            <p>
-                                Inicia tu presencia en redes sociales y crece tu negocio
+                            <p className='text-[#00a09b] typing text-lg'>
+                                Proposito
                             </p>
-                        </div>
-                        <div className='mt-5'>
-                            <p className='text-[#00a09b] typing'>Proposito</p>
                             <p>
                                 Diseñar, generar y ejecutar las bases para comenzar a promocionar tus servicios y/o productos en el
                                 mercado, estudiando y planteando estrategias según el análisis obtenido en redes sociales, dando a
@@ -28,7 +33,7 @@ const Paquete5 = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <p className='text-[#00a09b] typing'>
+                        <p className='text-[#00a09b] typing text-lg'>
                             ¿Que implica?
                         </p>
                         <div>
@@ -44,14 +49,14 @@ const Paquete5 = () => {
                         </div>
                     </div>
                     <div className='mt-6'>
-                        <p className='text-[#00a09b] typing'>
+                        <p className='text-[#00a09b] typing text-lg'>
                             ¿Qué servicios incluye?
                         </p>
                     </div>
                     {/* Pa’ que le empieces */}
                     <div className='mt-5'>
                         <div>
-                            <p className='text-[#00a09b] typing'>
+                            <p className='text-[#00a09b] typing text-lg'>
                                 Pa &#39; que le empieces
                             </p>
                         </div>
@@ -89,7 +94,7 @@ const Paquete5 = () => {
                     {/* Pa’ que te quieran */}
                     <div className='mt-8'>
                         <div>
-                            <p className='text-[#00a09b] typing'>
+                            <p className='text-[#00a09b] typing text-lg'>
                                 Pa&#39; que te quieran
                             </p>
                         </div>
@@ -130,7 +135,7 @@ const Paquete5 = () => {
                     {/* Pa’ que sueñen */}
                     <div className='mt-8'>
                         <div>
-                            <p className='text-[#00a09b] typing'>
+                            <p className='text-[#00a09b] typing text-lg'>
                                 Pa&#39; que sueñen
                             </p>
                         </div>
@@ -164,7 +169,7 @@ const Paquete5 = () => {
                             </div>
                         </div>
                         <div className='mt-2'>
-                            <p className='text-[#00a09b] typing'>
+                            <p className='text-[#00a09b] typing text-lg'>
                                 ¿Qué beneficios incluyen?
                             </p>
                             <div>
