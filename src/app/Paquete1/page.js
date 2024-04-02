@@ -1,4 +1,3 @@
-import SmallStars from "../../../components/SmallStars";
 import Accordion from "../../../components/Accordion";
 
 const Paquete1 = () => {
