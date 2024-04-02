@@ -111,7 +111,7 @@ const Paquetes = () => {
   };
 
   return (
-    <section className='px-[15px] py-[200px] 2xl:py-[250px]'>
+    <section className='px-[15px] py-[50px]'>
       <div className='container mx-auto'>
         <Slider className='w-[85%] lg:w-[95%] mx-auto' {...settings}>
           {cards.map((card, index) => (

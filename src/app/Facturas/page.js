@@ -6,7 +6,13 @@ const Facturas = () => {
     return (
         <main>
             <section>
-                <SmallStars />
+                <div className='fac-hero hero-bg py-[120px]'>
+                    <div className='container mx-auto'>
+                        <h1>
+                            Facturar
+                        </h1>
+                    </div>
+                </div>
                 <Facturar />
             </section>
         </main>

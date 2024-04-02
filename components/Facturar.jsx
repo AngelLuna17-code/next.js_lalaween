@@ -2,7 +2,7 @@ import React from 'react';
 
 const Facturar = () => {
     return (
-        <div className="container mx-auto py-[100px]">
+        <div className="container mx-auto py-[50px]">
             <div className='px-[15px] sm:px-[0px]'>
                 <div className="text-white px-[15px]  w-full sm:w-[60%] lg:w-[40%] mx-auto py-[25px] px-[25px] rounded-[15px]" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
                     <form action="https://formsubmit.co/Facturacionlalaween@gmail.com" method="POST">

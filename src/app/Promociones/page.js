@@ -6,10 +6,12 @@ const Promociones = () => {
     return (
         <main>
             <section>
-                <div className='paq-hero hero-bg py-[150px]'>
-                    <h1>
-                        Descubre
-                    </h1>
+                <div className='paq-hero hero-bg py-[120px]'>
+                    <div className='container mx-auto'>
+                        <h1>
+                            Promociones
+                        </h1>
+                    </div>
                 </div>
                 <Paquetes />
             </section>

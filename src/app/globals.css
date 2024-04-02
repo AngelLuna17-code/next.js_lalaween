@@ -184,6 +184,10 @@ iframe {
   background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../../public/paq-hero.webp);
 }
 
+.fac-hero {
+  background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../../public/fac-hero.webp);
+}
+
 .hero-bg {
   background-repeat: no-repeat;
   background-size: cover;
