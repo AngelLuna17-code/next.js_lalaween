@@ -1,5 +1,4 @@
 import Accordion from '../../../components/Accordion';
-import SmallStars from '../../../components/SmallStars';
 
 const Paquete5 = () => {
 

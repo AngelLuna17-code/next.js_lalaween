@@ -1,11 +1,9 @@
-import SmallStars from "../../../components/SmallStars";
 import Accordion from "../../../components/Accordion";
 
 const Paquete4 = () => {
 
     return (
         <section>
-            <SmallStars />
             {/* Hero */}
             <div className="paqs-hero hero-bg py-[130px]">
                 <div className="container mx-auto px-[15px]">
