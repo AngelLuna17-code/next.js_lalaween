@@ -6,19 +6,23 @@ const Paquete3 = () => {
     return (
         <section>
             <SmallStars />
-            <div className='container mx-auto py-[100px] px-[10px]'>
+            <div className="paqs-hero hero-bg py-[130px]">
+                <div className="container mx-auto px-[15px]">
+                    <h1>
+                        Pa &apos; quete encuentren siempre
+                    </h1>
+                    <p className="text-xl">
+                        Ante la duda una solución
+                    </p>
+                </div>
+            </div>
+            <div className='container mx-auto py-[50px] px-[10px]'>
                 <div className='p-5 rounded-lg' style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
                     <div className='text-white'>
                         <div>
-                            <h3 className='text-[#00a09b] font-black text-[23px] typing'>
-                                Pa &apos; quete encuentren siempre
-                            </h3>
-                            <p>
-                                Ante la duda una solución
+                            <p className='text-[#00a09b] typing text-lg'>
+                                Proposito
                             </p>
-                        </div>
-                        <div className='mt-5'>
-                            <p className='text-[#00a09b] typing'>Proposito</p>
                             <p>
                                 Mejorar la experiencia de sus usuarios y lograr un mayor alcance, con un máximo nivel de exposición posible
                                 para cumplir satisfactoriamente las necesidades de su nicho; conservando la autenticidad y personalidad
@@ -27,7 +31,7 @@ const Paquete3 = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <p className='text-[#00a09b] typing'>
+                        <p className='text-[#00a09b] typing text-lg'>
                             ¿Que implica?
                         </p>
                         <div>
@@ -46,7 +50,7 @@ const Paquete3 = () => {
                         </div>
                     </div>
                     <div className='mt-5'>
-                        <p className='text-[#00a09b] typing'>
+                        <p className='text-[#00a09b] typing text-lg'>
                             ¿Qué servicios incluye?
                         </p>
                         <div>
@@ -76,7 +80,7 @@ const Paquete3 = () => {
                             </ul>
                         </div>
                         <div className='mt-5'>
-                            <p className='text-[#00a09b] typing'>
+                            <p className='text-[#00a09b] typing text-lg'>
                                 ¿Qué beneficios incluye?
                             </p>
                             <div>
