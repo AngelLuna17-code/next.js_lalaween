@@ -13,7 +13,7 @@ const About = () => {
                         <h2 className='text-white text-center text-[25px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl-[44px] 2xl:text-[48px] title-container title'>
                             historia
                         </h2>
-                        <p className='w-[80%] mt-3 mx-auto text-center'>
+                        <p className='mt-3 mx-auto text-center'>
                             Nuestro logo, un gato y una luna, tiene una historia especial. Rony, la mascota de nuestra fundadora,
                             fue la inspiración. Aunque ya no está físicamente, sigue siendo nuestra fuente de inspiración.
                             Ahora imaginamos a Rony en la luna, donde las personas pueden pedir deseos. En el día de la mascota,
@@ -32,6 +32,7 @@ const About = () => {
                                 height={0}
                                 width={500}
                                 alt='rony'
+                                loading='eager'
                             />
                         </div>
                     </div>
