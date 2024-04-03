@@ -5,6 +5,7 @@ import ServiceCards from "../../components/ServiceCards";
 import LogoSlider from "../../components/LogoSlider"
 import Mapa from "../../components/Mapa";
 import Contacto from "../../components/Contacto";
+import SliderComponent from "../../components/SliderComponent";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <About />
         <ServiceCards />
         <LogoSlider />
+        <SliderComponent />
         <Mapa />
         <Contacto />
       </section>
