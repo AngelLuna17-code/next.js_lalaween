@@ -184,11 +184,11 @@ iframe {
   background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../../public/paqs-hero.webp);
 }
 
-.fac-hero{
+.fac-hero {
   background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../../public/fac-hero.webp);
 }
 
-.promo-hero{
+.promo-hero {
   background-image: linear-gradient(rgba(1, 1, 1, .5), rgba(1, 1, 0, 2)), url(../../public/promo-hero.webp);
 }
 
