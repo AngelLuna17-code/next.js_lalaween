@@ -15,8 +15,9 @@ export default function Home() {
         <Hero />
         <About />
         <ServiceCards />
-        <LogoSlider />
         <SliderComponent />
+        <LogoSlider />
+
         <Mapa />
         <Contacto />
       </section>
