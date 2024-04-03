@@ -11,7 +11,7 @@ const About = () => {
         setClickCount(prevCount => prevCount + 1);
 
         // Si el número de clics es par, reproduce el audio
-        if (clickCount % 2 === 0) {
+        if (clickCount % 1 === 0) {
             const audio = new Audio('cat.mp3');
             audio.play();
         } else {
@@ -50,6 +50,7 @@ const About = () => {
                         </svg>
                         <div className='bg-[#4274a6]' onClick={handleClick}>
                             <Image
+                                className='cursor-pointer'
                                 src="/rony.webp"
                                 height={0}
                                 width={500}
