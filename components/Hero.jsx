@@ -15,7 +15,7 @@ const Hero = () => {
                             alt="logo"
                             width={500}
                             height={350}
-
+                            loading='eager'
                         />
                     </div>
                     <div className='text-white text-center flex items-center justify-center overflow-hidden'>
