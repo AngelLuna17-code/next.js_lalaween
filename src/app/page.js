@@ -15,9 +15,8 @@ export default function Home() {
         <Hero />
         <About />
         <ServiceCards />
-       <App/>
+        <App />
         <LogoSlider />
-
         <Mapa />
         <Contacto />
       </section>

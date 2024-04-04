@@ -203,8 +203,7 @@ iframe {
   background-attachment: fixed;
 }
 
-
-
+/* 3D Slider */
 .slide img {
   width: 20rem;
   margin: 0 auto;
@@ -236,12 +235,4 @@ iframe {
   color: #68edff;
 }
 
-.next {
-  right: 0%;
-  top: 50%;
-}
-s
-.prev {
-  left: 0%;
-  top: 50%;
-}
+/* 3D Slider */
