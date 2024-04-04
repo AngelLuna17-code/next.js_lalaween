@@ -48,8 +48,19 @@ function App() {
     return (
         <section className="py-[50px] px-[15px]">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2">
-                <div>
-                    
+                <div className="flex items-center justify-center">
+                    <div>
+                        <h2 className='text-white text-center text-[25px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl-[44px] 2xl:text-[48px] title-container '>
+                            Mira nuestro
+                            <br />
+                            <span className='text-white text-center text-[25px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl-[44px] 2xl:text-[48px] title-container title'>
+                                portafolio
+                            </span>
+                        </h2>
+                        <p className='w-[80%] mt-3 mx-auto text-center'>
+                            Nosotros somos LalaWeen, agencia de publicidad y diseño. El creative team de diseño y marketing, que tu negocio necesita. Con la experiencia que nos respalda llevaremos tu negocio al siguiente nivel.
+                        </p>
+                    </div>
                 </div>
                 <div>
                     <Slider {...settings}>
