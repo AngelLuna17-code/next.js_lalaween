@@ -46,15 +46,22 @@ function App() {
     };
 
     return (
-        <div className="relative">
-            <Slider {...settings}>
-                {images.map((img, idx) => (
-                    <div className={idx === imageIndex ? "slide activeSlide" : "slide"} key={idx}>
-                        <img src={img} alt={`Slide ${idx}`} />
-                    </div>
-                ))}
-            </Slider>
-        </div>
+        <section className="py-[50px] px-[15px]">
+            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2">
+                <div>
+                    
+                </div>
+                <div>
+                    <Slider {...settings}>
+                        {images.map((img, idx) => (
+                            <div className={idx === imageIndex ? "slide activeSlide" : "slide"} key={idx}>
+                                <img src={img} alt={`Slide ${idx}`} />
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+            </div>
+        </section>
     );
 }
 
