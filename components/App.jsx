@@ -3,11 +3,16 @@ import { useState } from "react";
 import Slider from "react-slick";
 
 const images = [
-    '/logos/logo-1.webp',
-    '/logos/logo-2.webp',
-    '/logos/logo-3.webp',
-    '/logos/logo-4.webp',
-    '/logos/logo-5.webp',
+    '/portafolio/ltem-1.webp',
+    '/portafolio/item-2.webp',
+    '/portafolio/item-3.webp',
+    '/portafolio/item-4.webp',
+    '/portafolio/item-5.webp',
+    '/portafolio/item-6.webp',
+    '/portafolio/item-7.webp',
+    '/portafolio/item-8.webp',
+    '/portafolio/item-9.webp',
+    '/portafolio/item-10.webp'
 ];
 
 function App() {
