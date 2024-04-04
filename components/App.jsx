@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { useState } from "react";
 import Slider from "react-slick";
 
@@ -13,7 +13,7 @@ const images = [
 function App() {
     const NextArrow = ({ onClick }) => {
         return (
-            <button className="" onClick={onClick}>
+            <button className="absolute top-1/2 transform -translate-y-1/2 right-4 z-10" onClick={onClick}>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M9.707 2.293a1 1 0 0 1 1.414 0l8 8a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414-1.414L17.586 11H3a1 1 0 1 1 0-2h14.586l-7.293-7.293a1 1 0 0 1 0-1.414z" clipRule="evenodd" />
                 </svg>
@@ -23,7 +23,7 @@ function App() {
 
     const PrevArrow = ({ onClick }) => {
         return (
-            <button className="" onClick={onClick}>
+            <button className="absolute top-1/2 transform -translate-y-1/2 left-4 z-10" onClick={onClick}>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10.293 17.707a1 1 0 0 1-1.414 0l-8-8a1 1 0 0 1 0-1.414l8-8a1 1 0 0 1 1.414 1.414L2.414 9H17a1 1 0 1 1 0 2H2.414l7.293 7.293a1 1 0 0 1 0 1.414z" clipRule="evenodd" />
                 </svg>
@@ -46,7 +46,7 @@ function App() {
     };
 
     return (
-        <div className="App">
+        <div className="relative">
             <Slider {...settings}>
                 {images.map((img, idx) => (
                     <div className={idx === imageIndex ? "slide activeSlide" : "slide"} key={idx}>
