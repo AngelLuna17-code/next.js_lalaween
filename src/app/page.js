@@ -5,7 +5,7 @@ import ServiceCards from "../../components/ServiceCards";
 import LogoSlider from "../../components/LogoSlider"
 import Mapa from "../../components/Mapa";
 import Contacto from "../../components/Contacto";
-import SliderComponent from "../../components/SliderComponent";
+import App from "../../components/App";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <Hero />
         <About />
         <ServiceCards />
-        <SliderComponent />
+       <App/>
         <LogoSlider />
 
         <Mapa />
