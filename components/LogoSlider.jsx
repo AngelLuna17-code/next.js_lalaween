@@ -20,7 +20,7 @@ const LogoSlider = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000, // Coma faltante aquí
@@ -72,7 +72,7 @@ const LogoSlider = () => {
             <div key={index} style={{ height: '300px' }}>
               <div className='bg-[#e7e4e9] mx-[5px] sm:mx-[30px] md:mx-[5px] rounded-[15px] py-5'>
                 <Image
-                  className='h-[200px] w-auto object-contain mx-auto'
+                  className='h-[100px] w-auto object-contain mx-auto'
                   height={300}
                   width={300}
                   key={index}
