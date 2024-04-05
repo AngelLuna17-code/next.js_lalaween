@@ -9,7 +9,7 @@ const Promociones = () => {
                 <div className='promo-hero hero-bg py-[130px]'>
                     <div className='container mx-auto'>
                         <h1>
-                            Promociones
+                            Planes
                         </h1>
                     </div>
                 </div>

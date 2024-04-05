@@ -63,8 +63,8 @@ const Navbar = () => {
                 <Link href="/Facturas" className="text-white hover:text-[#00cac4]">
                   Facturas
                 </Link>
-                <Link href="/Promociones" className="text-white hover:text-[#00cac4]">
-                  Promociones
+                <Link href="/Planes" className="text-white hover:text-[#00cac4]">
+                  Planes
                 </Link>
               </ul>
             </div>
@@ -154,12 +154,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link className="text-white hover:text-[#00cac4]" href="/Promociones" onClick={closeMenuOnClick}>
-                  Promociones
+                <Link className="text-white hover:text-[#00cac4]" href="/Planes" onClick={closeMenuOnClick}>
+                  Planes
                 </Link>
               </li>
             </ul>
-
           </div>
         )}
         {/* Dropdown */}
