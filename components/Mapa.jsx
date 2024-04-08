@@ -9,9 +9,10 @@ export default function Mapa() {
                         <div className='text-white text-center'>
                             <h2 className='text-white text-center text-[25px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl-[44px] 2xl:text-[48px] title-container '>
                                 Aquí nos
-                            </h2>
-                            <h2 className='text-white text-center text-[25px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl-[44px] 2xl:text-[48px] title-container title'>
-                                encontramos
+                                <br />
+                                <span className='text-white text-center text-[25px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl-[44px] 2xl:text-[48px] title-container title'>
+                                    encontramos
+                                </span>
                             </h2>
                         </div>
                     </div>
