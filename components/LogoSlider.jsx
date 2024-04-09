@@ -62,7 +62,7 @@ const LogoSlider = () => {
   };
 
   return (
-    <section className='px-[15px] py-[100px]'>
+    <section className='px-[15px] py-[50px]'>
       <div className='container mx-auto'>
         <Slider
           className='slider w-[85%] sm:w-[90%] md:w-[93%] lg:w-[95%] mx-auto'
