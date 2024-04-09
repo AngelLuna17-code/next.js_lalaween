@@ -16,7 +16,10 @@ const App = () => {
         "/portafolio/item-7.webp",
         "/portafolio/item-8.webp",
         "/portafolio/item-9.webp",
-        "/portafolio/item-10.webp"
+        "/portafolio/item-10.webp",
+        "/portafolio/item-11.webp",
+        "/portafolio/item-12.webp",
+        "/portafolio/item-13.webp"
     ];
 
     const sliderRef = useRef();
@@ -25,51 +28,16 @@ const App = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000, // Coma faltante aquí
-        responsive: [
-            {
-                breakpoint: 1280, // xl breakpoint
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 1024, // lg breakpoint
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 768, // md breakpoint
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 640, // sm breakpoint
-                settings: {
-                    slidesToShow: 1,
-                },
-            },
-            {
-                breakpoint: 360, // xs breakpoint
-                settings: {
-                    slidesToShow: 1,
-                },
-            },
-        ],
+        autoplaySpeed: 2000,
     };
 
     return (
         <section className='px-[15px] py-[100px]'>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2'>
-                <div>
+                <div className='flex items-center justify-center'>
                     <div>
                         <h2 className='text-white text-center text-[25px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl-[44px] 2xl:text-[48px] title-container '>
                             Mira nuestro
@@ -89,9 +57,9 @@ const App = () => {
                             <div key={index}>
                                 <div className='mx-[5px] sm:mx-[30px] md:mx-[5px]'>
                                     <Image
-                                        className='object-contain mx-auto'
-                                        height={300}
-                                        width={300}
+                                        className='h-auto w-[100%] mx-auto rounded-[15px]'
+                                        height={100}
+                                        width={100}
                                         key={index}
                                         src={image}
                                         alt={`Image ${index + 1}`}
