@@ -39,7 +39,7 @@ const Portafolio = () => {
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 <div className='order-2 lg:order-1'>
                     <Slider
-                        className='slider w-[85%] sm:w-[90%] md:w-[93%] lg:w-[95%] mx-auto'
+                        className='slider w-[85%] lg:w-[90%]  mx-auto'
                         ref={sliderRef}
                         {...settings}>
                         {images.map((image, index) => (
@@ -53,7 +53,7 @@ const Portafolio = () => {
                                         src={image}
                                         alt={`Image ${index + 1}`}
                                         sizes="100vw"
-                                        loading='lazy'
+                                        loading='eager'
                                     />
                                 </div>
                             </div>
