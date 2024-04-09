@@ -5,7 +5,7 @@ export default function Mapa() {
         <section className='py-[50px] px-[15px]'>
             <div className='container mx-auto overflow-hidden'>
                 <div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-5'>
-                    <div className='order-1 lg:order-2 flex items-center justify-center'>
+                    <div className='flex items-center justify-center'>
                         <div className='text-white text-center'>
                             <h2 className='text-white text-center text-[25px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl-[44px] 2xl:text-[48px] title-container '>
                                 Aquí nos
@@ -16,7 +16,7 @@ export default function Mapa() {
                             </h2>
                         </div>
                     </div>
-                    <div className='order-2 lg:order-1'>
+                    <div className=''>
                         <div className='flex items-center justify-center'>
                             <iframe
                                 className='p-0 h-[300px] sm:h-[450px] lg:h-[350px] w-full'
