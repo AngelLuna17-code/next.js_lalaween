@@ -23,7 +23,7 @@ const Hero = () => {
                             <h1 className='font-thin'>Impulsamos</h1>
                             <AnimatedText />
                             <h1>conservando tu esencia</h1>
-                            <Link href="/Promociones">
+                            <Link href="/Planes">
                                 <button className='w-full lg:w-3/4 bg-[#066a69] hover:bg-[#01a09a] px-12 py-3 font-black rounded-lg mt-3'>
                                     Nuestros Paquetes
                                 </button>
