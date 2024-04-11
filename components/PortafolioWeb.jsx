@@ -15,9 +15,12 @@ const PortafolioWeb = () => {
             '/web/tanuki/item-7.webp',
         ],
         [
-            "/web/garay.webp",
-            "/web/garay2.webp",
-            "/web/garay3.webp"
+            "/web/garay/item-1.webp",
+            "/web/garay/item-2.webp",
+            "/web/garay/item-3.webp",
+            "/web/garay/item-4.webp",
+            "/web/garay/item-5.webp",
+            "/web/garay/item-6.webp",
         ],
         [
             "/web/lalaween/lalaween.webp",
