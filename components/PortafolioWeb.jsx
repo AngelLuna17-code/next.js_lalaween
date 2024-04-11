@@ -5,29 +5,38 @@ import Image from 'next/image';
 
 const PortafolioWeb = () => {
     const images = [
-        [
-            '/web/tanuki/item-1.webp',
-            '/web/tanuki/item-2.webp',
-            '/web/tanuki/item-3.webp',
-            '/web/tanuki/item-4.webp',
-            '/web/tanuki/item-5.webp',
-            '/web/tanuki/item-6.webp',
-            '/web/tanuki/item-7.webp',
-        ],
-        [
-            "/web/garay/item-1.webp",
-            "/web/garay/item-2.webp",
-            "/web/garay/item-3.webp",
-            "/web/garay/item-4.webp",
-            "/web/garay/item-5.webp",
-            "/web/garay/item-6.webp",
-        ],
-        [
-            "/web/lalaween/item-1.webp",
-            "/web/lalaween/item-2.webp",
-            "/web/lalaween/item-3.webp",
-            "/web/lalaween/item-4.webp",
-        ]
+        {
+            title: "Tanu-ki-ya",
+            items: [
+                '/web/tanuki/item-1.webp',
+                '/web/tanuki/item-2.webp',
+                '/web/tanuki/item-3.webp',
+                '/web/tanuki/item-4.webp',
+                '/web/tanuki/item-5.webp',
+                '/web/tanuki/item-6.webp',
+                '/web/tanuki/item-7.webp',
+            ]
+        },
+        {
+            title: "Garay arquitectos",
+            items: [
+                "/web/garay/item-1.webp",
+                "/web/garay/item-2.webp",
+                "/web/garay/item-3.webp",
+                "/web/garay/item-4.webp",
+                "/web/garay/item-5.webp",
+                "/web/garay/item-6.webp",
+            ]
+        },
+        {
+            title: "Lalaween",
+            items: [
+                "/web/lalaween/item-1.webp",
+                "/web/lalaween/item-2.webp",
+                "/web/lalaween/item-3.webp",
+                "/web/lalaween/item-4.webp",
+            ]
+        }
     ];
 
     const sliderRef = useRef();
@@ -91,7 +100,7 @@ const PortafolioWeb = () => {
                                         className='mx-auto rounded-[15px]'
                                         height={1000}
                                         width={1000}
-                                        src={imageSet[0]}
+                                        src={imageSet.items[0]}
                                         alt={`Image ${index + 1}`}
                                         sizes="100vw"
                                         loading='lazy'
@@ -116,7 +125,7 @@ const PortafolioWeb = () => {
                         <div className='p-5' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                             <div>
                                 <p className='title text-2xl'>
-                                    Image {openModalIndex + 1}
+                                    {images[openModalIndex].title}
                                 </p>
                             </div>
                             {/* Botón para cerrar el modal */}
@@ -132,12 +141,12 @@ const PortafolioWeb = () => {
                         </div>
                         {/* header del modal */}
                         {/* Contenido del modal */}
-                        <div>
+                        <div className='overflow-whidden'>
                             <Slider className='w-[75%] mx-auto' {...settings}>
-                                {images[openModalIndex].map((image, index) => (
+                                {images[openModalIndex].items.map((image, index) => (
                                     <div key={index}>
                                         <Image
-                                            className='mx-auto rounded-[15px]'
+                                            className=' h-[300px] w-auto mx-auto rounded-[15px] object-contain'
                                             height={1000}
                                             width={1000}
                                             src={image}
