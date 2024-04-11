@@ -6,6 +6,7 @@ import Portafolio from "../../components/Portafolio";
 import LogoSlider from "../../components/LogoSlider"
 import Mapa from "../../components/Mapa";
 import Contacto from "../../components/Contacto";
+import PortafolioWeb from "../../components/PortafolioWeb";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
         <ServiceCards />
         <Portafolio />
+        <PortafolioWeb />
         <LogoSlider />
         <Mapa />
         <Contacto />
