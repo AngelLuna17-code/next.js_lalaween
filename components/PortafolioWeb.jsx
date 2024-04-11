@@ -6,9 +6,13 @@ import Image from 'next/image';
 const PortafolioWeb = () => {
     const images = [
         [
-            '/web/tanukiya.webp',
-            '/web/tanukiya2.webp',
-            '/web/tanukiya3.webp'
+            '/web/tanuki/item-1.webp',
+            '/web/tanuki/item-2.webp',
+            '/web/tanuki/item-3.webp',
+            '/web/tanuki/item-4.webp',
+            '/web/tanuki/item-5.webp',
+            '/web/tanuki/item-6.webp',
+            '/web/tanuki/item-7.webp',
         ],
         [
             "/web/garay.webp",
