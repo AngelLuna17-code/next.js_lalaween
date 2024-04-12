@@ -23,11 +23,11 @@ const Hero = () => {
                             <h1 className='font-thin'>Impulsamos</h1>
                             <AnimatedText />
                             <h1>conservando tu esencia</h1>
-                            <Link href="/Planes">
+                            <a href="https://wa.me/3111035526?text=Me%20gustaría%20saber%20más%20acerca%20de%20precios%20y%20servicios" target="blank">
                                 <button className='w-full lg:w-3/4 bg-[#066a69] hover:bg-[#01a09a] px-12 py-3 font-black rounded-lg mt-3'>
-                                    Nuestros Paquetes
+                                    Contactanos
                                 </button>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
