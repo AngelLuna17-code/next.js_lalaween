@@ -86,7 +86,7 @@ const PortafolioWeb = () => {
 
     return (
         <section className='px-[15px] py-[50px]'>
-            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2'>
+            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 <div className='flex items-center justify-center'>
                     <div>
                         <h2 className='text-white text-center text-[25px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl-[44px] 2xl:text-[48px] title-container '>
