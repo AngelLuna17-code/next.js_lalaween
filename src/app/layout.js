@@ -3,6 +3,7 @@ import './bg.css';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import ScrollToTopButton from '../../components/ScrollToTopButton';
+import FloatingButton from '../../components/FloatingButton';
 
 export const metadata = {
   title: 'Lalaween',
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <Footer />
         <ScrollToTopButton />
+        <FloatingButton />
       </body>
     </html>
   );
