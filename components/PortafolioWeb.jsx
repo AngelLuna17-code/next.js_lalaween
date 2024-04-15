@@ -31,16 +31,6 @@ const PortafolioWeb = () => {
         {
             title: "Lalaween",
             items: [
-                "/web/capital/item-1.webp",
-                "/web/capital/item-2.webp",
-                "/web/capital/item-3.webp",
-                "/web/capital/item-4.webp",
-                "/web/capital/item-5.webp",
-            ]
-        },
-        {
-            title: "Lalaween",
-            items: [
                 "/web/lalaween/item-1.webp",
                 "/web/lalaween/item-2.webp",
                 "/web/lalaween/item-3.webp",
