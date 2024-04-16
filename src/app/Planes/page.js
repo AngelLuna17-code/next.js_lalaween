@@ -1,5 +1,6 @@
 import React from 'react';
 import Paquetes from '../../../components/Paquetes';
+import PlanForm from '../../../components/PlanForm';
 
 const Promociones = () => {
 
@@ -14,6 +15,7 @@ const Promociones = () => {
                     </div>
                 </div>
                 <Paquetes />
+                <PlanForm />
             </section>
         </main>
     );
