@@ -7,11 +7,23 @@ import Image from 'next/image';
 
 const LogoSlider = () => {
   const images = [
-    '/logos/logo-1.webp',
-    '/logos/logo-2.webp',
-    '/logos/logo-3.webp',
-    '/logos/logo-4.webp',
-    '/logos/logo-5.webp',
+    '/logos/item-1.webp',
+    '/logos/item-2.webp',
+    '/logos/item-3.webp',
+    '/logos/item-4.webp',
+    '/logos/item-5.webp',
+    '/logos/item-6.webp',
+    '/logos/item-7.webp',
+    '/logos/item-8.webp',
+    '/logos/item-9.webp',
+    '/logos/item-0.webp',
+    '/logos/item-10.webp',
+    '/logos/item-11.webp',
+    '/logos/item-12.webp',
+    '/logos/item-13.webp',
+    '/logos/item-14.webp',
+    '/logos/item-15.webp',
+    '/logos/item-16.webp'
   ];
 
   const sliderRef = useRef();
