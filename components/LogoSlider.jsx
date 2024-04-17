@@ -35,7 +35,7 @@ const LogoSlider = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000, // Coma faltante aquí
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1280, // xl breakpoint
