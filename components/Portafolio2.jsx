@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const Portafolio2 = () => {
+
     const settings = {
         dots: false,
         infinite: true,
@@ -15,6 +16,7 @@ const Portafolio2 = () => {
         autoplay: true,
         autoplaySpeed: 2000
     };
+
     return (
         <section className='py-[50px] px-[15px]'>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
@@ -32,6 +34,28 @@ const Portafolio2 = () => {
                                     width={100}
                                     height={100}
                                 />
+                            </div>
+                            <div className='hidden lg:block'>
+                                <div className=' grid grid-cols-2'>
+                                    <div>
+                                        <Image
+                                            className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
+                                            src="/portafolio/branding-1/item-1.webp"
+                                            alt="portafolio"
+                                            width={100}
+                                            height={100}
+                                        />
+                                    </div>
+                                    <div>
+                                        <Image
+                                            className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
+                                            src="/portafolio/branding-1/item-3.webp"
+                                            alt="portafolio"
+                                            width={100}
+                                            height={100}
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         {/* slide 1 */}
@@ -233,7 +257,6 @@ const Portafolio2 = () => {
                         {/* slide 17 */}
                         <div className='w-full'>
                             <div className='lg:hidden'>
-
                                 <Image
                                     className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
                                     src="/portafolio/impresos-2/item-3.webp"
