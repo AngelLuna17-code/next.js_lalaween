@@ -17,9 +17,8 @@ export default function Home() {
         <Hero />
         <About />
         <ServiceCards />
-        <Portafolio />
-        <PortafolioWeb />
         <Portafolio2 />
+        <PortafolioWeb />
         <LogoSlider />
         <Mapa />
         <Contacto />
