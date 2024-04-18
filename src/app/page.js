@@ -8,7 +8,7 @@ import Mapa from "../../components/Mapa";
 import Contacto from "../../components/Contacto";
 import PortafolioWeb from "../../components/PortafolioWeb";
 import Portafolio2 from "../../components/Portafolio2"
-import Demo from "../../components/demo";
+import Demo from "../../components/Demo";
 
 export default function Home() {
   return (
