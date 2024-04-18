@@ -8,6 +8,7 @@ import Mapa from "../../components/Mapa";
 import Contacto from "../../components/Contacto";
 import PortafolioWeb from "../../components/PortafolioWeb";
 import Portafolio2 from "../../components/Portafolio2"
+import Demo from "../../components/demo";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <About />
         <ServiceCards />
         <Portafolio2 />
+        <Demo />
         <PortafolioWeb />
         <LogoSlider />
         <Mapa />
