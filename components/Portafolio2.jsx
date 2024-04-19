@@ -79,33 +79,38 @@ const Portafolio2 = () => {
                                     </div>
                                     {/* col 1 */}
                                     {/* col 2 */}
-                                    <div className='w-full col col-span-2'>
-                                        <div className='relative w-full h-full'>
-                                            <Image
-                                                className={`h-auto w-[100%] ${currentImageIndex !== 0 && 'opacity-0'}`}
-                                                src="/portafolio/branding-1/item-3.webp"
-                                                width={100}
-                                                height={100}
-                                                objectFit="cover"
-                                                alt="Imagen 1"
-                                            />
-                                            <Image
-                                                className={`h-auto w-[100%] absolute top-0 left-0 ${currentImageIndex === 0 && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
-                                                src="/portafolio/branding-1/item-4.webp"
-                                                width={100}
-                                                height={100}
-                                                objectFit="cover"
-                                                alt="Imagen 2"
-                                            />
+                                    <div className='flex items-center jusdtify-center col col-span-2'>
+                                        <div className='w-full  '>
+                                            <div className='relative w-full h-full '>
+                                                <Image
+                                                    className={`h-auto w-[100%] ${currentImageIndex !== 0 && 'opacity-0'}`}
+                                                    src="/portafolio/branding-1/item-3.webp"
+                                                    width={100}
+                                                    height={100}
+                                                    objectFit="cover"
+                                                    alt="Imagen 1"
+                                                />
+                                                <Image
+                                                    className={`h-auto w-[100%] absolute top-0 left-0 ${currentImageIndex === 0 && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
+                                                    src="/portafolio/branding-1/item-4.webp"
+                                                    width={100}
+                                                    height={100}
+                                                    objectFit="cover"
+                                                    alt="Imagen 2"
+                                                />
+                                            </div>
                                         </div>
                                     </div>
+
                                     {/* col 2 */}
+                                </div>
+                                <div className='grid grid-cols-2 gap-3 mt-3'>
                                     {/* col 3 */}
-                                    <div className='w-full col col-span-2'>
+                                    <div className='w-full col col-span-1'>
                                         <div className='relative w-full h-full'>
                                             <Image
                                                 className={`h-auto w-[100%] ${currentImageIndex !== 0 && 'opacity-0'}`}
-                                                src="/portafolio/branding-1/item-4.webp"
+                                                src="/portafolio/branding-1/item-5.webp"
                                                 width={100}
                                                 height={100}
                                                 objectFit="cover"
@@ -113,7 +118,7 @@ const Portafolio2 = () => {
                                             />
                                             <Image
                                                 className={`h-auto w-[100%] absolute top-0 left-0 ${currentImageIndex === 0 && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
-                                                src="/portafolio/branding-1/item-5.webp"
+                                                src="/portafolio/branding-1/item-6.webp"
                                                 width={100}
                                                 height={100}
                                                 objectFit="cover"
@@ -126,7 +131,7 @@ const Portafolio2 = () => {
                                     <div className='w-full col col-span-1'>
                                         <Image
                                             className='h-auto w-[100%]'
-                                            src="/portafolio/branding-1/item-6.webp"
+                                            src="/portafolio/branding-1/item-7.webp"
                                             width={100}
                                             height={100}
                                             objectFit="cover"
