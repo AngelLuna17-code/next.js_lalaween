@@ -50,8 +50,8 @@ const Portafolio2 = () => {
                             <div key={index} className='w-full'>
                                 <div className='lg:hidden'>
                                     <Image
-                                        className={`w-auto h-[200px] sm:h-[400px] object-contain mx-auto ${index !== currentImageIndex && 'opacity-0'}`}
-                                        src={image}
+                                        className="h-auto w-[100%]"
+                                        src="/portafolio/branding-1/item-3.webp"
                                         alt="portafolio"
                                         width={100}
                                         height={100}
