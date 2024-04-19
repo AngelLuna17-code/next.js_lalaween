@@ -38,7 +38,8 @@ const Portafolio2 = () => {
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 <div className='lg:order-1'>
                     <Slider
-                        className='slider w-[85%] sm:w-[90%] md:w-[93%] lg:w-[95%] mx-auto'
+                        style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}
+                        className='slider w-[85%] sm:w-[90%] md:w-[93%] lg:w-[95%] mx-auto p-6 rounded-[15px]'
                         {...settings}
                     >
                         {/* slide 1 */}
