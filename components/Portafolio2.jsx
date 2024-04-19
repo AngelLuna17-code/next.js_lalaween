@@ -9,20 +9,15 @@ const Portafolio2 = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [hovering, setHovering] = useState(false);
 
-    const images = [
-        "/portafolio/branding-1/item-1.webp",
-        "/portafolio/branding-1/item-2.webp",
-    ];
-
     useEffect(() => {
         const interval = setInterval(() => {
             if (!hovering) {
-                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 2); // 2 is the number of images
             }
         }, 2000);
 
         return () => clearInterval(interval);
-    }, [hovering, images.length]); 
+    }, [hovering]);
 
     const handleHover = (isHovering) => {
         setHovering(isHovering);
@@ -46,43 +41,53 @@ const Portafolio2 = () => {
                         className='slider w-[85%] sm:w-[90%] md:w-[93%] lg:w-[95%] mx-auto'
                         {...settings}
                     >
-                        {images.map((image, index) => (
-                            <div key={index} className='w-full'>
-                                <div className='lg:hidden'>
-                                    <Image
-                                        className="h-auto w-[100%]"
-                                        src="/portafolio/branding-1/item-3.webp"
-                                        alt="portafolio"
-                                        width={100}
-                                        height={100}
-                                    />
-                                </div>
-                                <div className='hidden lg:block' onMouseEnter={() => handleHover(true)} onMouseLeave={() => handleHover(false)}>
-                                    <div className='grid grid-cols-3'>
-                                        <div className='w-full'>
-                                            <div className='relative w-full h-full'>
-                                                <Image
-                                                    className={`h-auto w-[100%] ${index !== currentImageIndex && 'opacity-0'}`}
-                                                    src={image}
-                                                    width={100}
-                                                    height={100}
-                                                    objectFit="cover"
-                                                    alt={`Imagen ${index + 1}`}
-                                                />
-                                                <Image
-                                                    className={`h-auto w-[100%] absolute top-0 left-0 ${index === currentImageIndex && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
-                                                    src={images[(index + 1) % images.length]}
-                                                    width={100}
-                                                    height={100}
-                                                    objectFit="cover"
-                                                    alt={`Imagen ${index + 2}`}
-                                                />
-                                            </div>
+                        {/* slide 1 */}
+                        <div className='w-full'>
+                            <div className='lg:hidden'>
+                                <Image
+                                    className="h-auto w-[100%]"
+                                    src="/portafolio/branding-1/item-3.webp"
+                                    alt="portafolio"
+                                    width={100}
+                                    height={100}
+                                />
+                            </div>
+                            <div className='hidden lg:block' onMouseEnter={() => handleHover(true)} onMouseLeave={() => handleHover(false)}>
+                                <div className='grid grid-cols-3'>
+                                    <div className='w-full'>
+                                        <div className='relative w-full h-full'>
+                                            <Image
+                                                className={`h-auto w-[100%] ${currentImageIndex !== 0 && 'opacity-0'}`}
+                                                src="/portafolio/branding-1/item-1.webp"
+                                                width={100}
+                                                height={100}
+                                                objectFit="cover"
+                                                alt="Imagen 1"
+                                            />
+                                            <Image
+                                                className={`h-auto w-[100%] absolute top-0 left-0 ${currentImageIndex === 0 && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
+                                                src="/portafolio/branding-1/item-2.webp"
+                                                width={100}
+                                                height={100}
+                                                objectFit="cover"
+                                                alt="Imagen 2"
+                                            />
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        ))}
+                        </div>
+                        {/* slide 1 */}
+                        {/* slide 2 */}
+                        <div>
+                            2
+                        </div>
+                        {/* slide 2 */}
+                        {/* slide 3 */}
+                        <div>
+                            3
+                        </div>
+                        {/* slide 3 */}
                     </Slider>
                 </div>
                 <div className='flex items-center justify-center order-1 lg:order-2'>
