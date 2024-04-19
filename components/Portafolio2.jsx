@@ -66,6 +66,7 @@ const Portafolio2 = () => {
                                                 height={100}
                                                 objectFit="cover"
                                                 alt="Imagen 1"
+                                                sizes="100vw"
                                             />
                                             <Image
                                                 className={`h-auto w-[100%] absolute top-0 left-0 ${currentImageIndex === 0 && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
@@ -74,6 +75,7 @@ const Portafolio2 = () => {
                                                 height={100}
                                                 objectFit="cover"
                                                 alt="Imagen 2"
+                                                sizes="100vw"
                                             />
                                         </div>
                                     </div>
@@ -89,6 +91,7 @@ const Portafolio2 = () => {
                                                     height={100}
                                                     objectFit="cover"
                                                     alt="Imagen 1"
+                                                    sizes="100vw"
                                                 />
                                                 <Image
                                                     className={`h-auto w-[100%] absolute top-0 left-0 ${currentImageIndex === 0 && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
@@ -97,6 +100,7 @@ const Portafolio2 = () => {
                                                     height={100}
                                                     objectFit="cover"
                                                     alt="Imagen 2"
+                                                    sizes="100vw"
                                                 />
                                             </div>
                                         </div>
@@ -115,6 +119,7 @@ const Portafolio2 = () => {
                                                 height={100}
                                                 objectFit="cover"
                                                 alt="Imagen 1"
+                                                sizes="100vw"
                                             />
                                             <Image
                                                 className={`h-auto w-[100%] absolute top-0 left-0 ${currentImageIndex === 0 && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
@@ -123,6 +128,7 @@ const Portafolio2 = () => {
                                                 height={100}
                                                 objectFit="cover"
                                                 alt="Imagen 2"
+                                                sizes="100vw"
                                             />
                                         </div>
                                     </div>
@@ -136,6 +142,7 @@ const Portafolio2 = () => {
                                             height={100}
                                             objectFit="cover"
                                             alt="Imagen 2"
+                                            sizes="100vw"
                                         />
                                     </div>
                                     {/* col 4 */}
