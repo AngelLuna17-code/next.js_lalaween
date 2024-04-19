@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import Image from 'next/image';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import '../src/app/FlipImage.css';
 
 const Portafolio2 = () => {
 
@@ -13,7 +14,7 @@ const Portafolio2 = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000
     };
 
@@ -22,7 +23,7 @@ const Portafolio2 = () => {
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 <div className='order-2 lg:order-1'>
                     <Slider
-                        className='w-[85%] lg:w-[90%] mx-auto'
+                        className='w-[85%] lg:w-[90%]  mx-auto'
                         {...settings}>
                         {/* slide 1 */}
                         <div className='w-full'>
@@ -35,28 +36,32 @@ const Portafolio2 = () => {
                                     height={100}
                                 />
                             </div>
+                            {/* Flip image */}
                             <div className='hidden lg:block'>
-                                <div className=' grid grid-cols-2'>
-                                    <div>
-                                        <Image
-                                            className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                            src="/portafolio/branding-1/item-1.webp"
-                                            alt="portafolio"
-                                            width={100}
-                                            height={100}
-                                        />
-                                    </div>
-                                    <div>
-                                        <Image
-                                            className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                            src="/portafolio/branding-1/item-3.webp"
-                                            alt="portafolio"
-                                            width={100}
-                                            height={100}
-                                        />
+                                <div className='grid grid-cols-3'>
+                                    <div className='w-full'>
+                                        <div className='relative w-full h-full'>
+                                            <Image
+                                                className='h-auto w-[100%]'
+                                                src="/portafolio/branding-1/item-1.webp"
+                                                width={100}
+                                                height={100}
+                                                objectFit="cover"
+                                                alt="Imagen 1"
+                                            />
+                                            <Image
+                                                className="h-auto w-[100%] absolute top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-300"
+                                                src="/portafolio/branding-1/item-2.webp"
+                                                width={100}
+                                                height={100}
+                                                objectFit="cover"
+                                                alt="Imagen 2"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            {/* Flip image */}
                         </div>
                         {/* slide 1 */}
                         {/* slide 2 */}
