@@ -1,12 +1,32 @@
 "use client";
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import Image from 'next/image';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import '../src/app/FlipImage.css';
 
 const Portafolio2 = () => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [hovering, setHovering] = useState(false);
+
+    const images = [
+        "/portafolio/branding-1/item-1.webp",
+        "/portafolio/branding-1/item-2.webp",
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (!hovering) {
+                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+            }
+        }, 2000);
+
+        return () => clearInterval(interval);
+    }, [hovering, images.length]); 
+
+    const handleHover = (isHovering) => {
+        setHovering(isHovering);
+    };
 
     const settings = {
         dots: false,
@@ -21,283 +41,48 @@ const Portafolio2 = () => {
     return (
         <section className='py-[50px] px-[15px]'>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
-                <div className='order-2 lg:order-1'>
+                <div className='lg:order-1'>
                     <Slider
-                        className='w-[85%] lg:w-[90%]  mx-auto'
-                        {...settings}>
-                        {/* slide 1 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/branding-1/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                            {/* Flip image */}
-                            <div className='hidden lg:block'>
-                                <div className='grid grid-cols-3'>
-                                    <div className='w-full'>
-                                        <div className='relative w-full h-full'>
-                                            <Image
-                                                className='h-auto w-[100%]'
-                                                src="/portafolio/branding-1/item-1.webp"
-                                                width={100}
-                                                height={100}
-                                                objectFit="cover"
-                                                alt="Imagen 1"
-                                            />
-                                            <Image
-                                                className="h-auto w-[100%] absolute top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-300"
-                                                src="/portafolio/branding-1/item-2.webp"
-                                                width={100}
-                                                height={100}
-                                                objectFit="cover"
-                                                alt="Imagen 2"
-                                            />
+                        className='slider w-[85%] sm:w-[90%] md:w-[93%] lg:w-[95%] mx-auto'
+                        {...settings}
+                    >
+                        {images.map((image, index) => (
+                            <div key={index} className='w-full'>
+                                <div className='lg:hidden'>
+                                    <Image
+                                        className={`w-auto h-[200px] sm:h-[400px] object-contain mx-auto ${index !== currentImageIndex && 'opacity-0'}`}
+                                        src={image}
+                                        alt="portafolio"
+                                        width={100}
+                                        height={100}
+                                    />
+                                </div>
+                                <div className='hidden lg:block' onMouseEnter={() => handleHover(true)} onMouseLeave={() => handleHover(false)}>
+                                    <div className='grid grid-cols-3'>
+                                        <div className='w-full'>
+                                            <div className='relative w-full h-full'>
+                                                <Image
+                                                    className={`h-auto w-[100%] ${index !== currentImageIndex && 'opacity-0'}`}
+                                                    src={image}
+                                                    width={100}
+                                                    height={100}
+                                                    objectFit="cover"
+                                                    alt={`Imagen ${index + 1}`}
+                                                />
+                                                <Image
+                                                    className={`h-auto w-[100%] absolute top-0 left-0 ${index === currentImageIndex && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
+                                                    src={images[(index + 1) % images.length]}
+                                                    width={100}
+                                                    height={100}
+                                                    objectFit="cover"
+                                                    alt={`Imagen ${index + 2}`}
+                                                />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            {/* Flip image */}
-                        </div>
-                        {/* slide 1 */}
-                        {/* slide 2 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/branding-2/item-1.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 2 */}
-                        {/* slide 3 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/branding-3/item-4.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 3 */}
-                        {/* slide 4 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/contenido-1/item-6.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 4 */}
-                        {/* slide 5 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/contenido-2/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 5 */}
-                        {/* slide 6 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/contenido-3/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 6 */}
-                        {/* slide 7 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/contenido-4/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 7 */}
-                        {/* slide 8 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/contenido-5/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 8 */}
-                        {/* slide 9 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/contenido-6/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 9 */}
-                        {/* slide 10 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/contenido-7/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 10 */}
-                        {/* slide 11 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/contenido-8/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 11 */}
-                        {/* slide 12 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/contenido-9/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 12 */}
-                        {/* slide 13 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/contenido-10/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 13 */}
-                        {/* slide 14 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/contenido-11/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 14 */}
-                        {/* slide 15 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/contenido-12/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 15 */}
-                        {/* slide 16 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/impresos-1/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 16 */}
-                        {/* slide 17 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/impresos-2/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 17 */}
-                        {/* slide 18 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/impresos-3/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 18 */}
-                        {/* slide 19 */}
-                        <div className='w-full'>
-                            <div className='lg:hidden'>
-                                <Image
-                                    className='w-auto h-[200px] sm:h-[400px] object-contain mx-auto'
-                                    src="/portafolio/impresos-4/item-3.webp"
-                                    alt="portafolio"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        {/* slide 19 */}
+                        ))}
                     </Slider>
                 </div>
                 <div className='flex items-center justify-center order-1 lg:order-2'>
