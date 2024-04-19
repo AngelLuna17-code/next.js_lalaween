@@ -12,7 +12,7 @@ const Portafolio2 = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             if (!hovering) {
-                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 2); // 2 is the number of images
+                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 2);
             }
         }, 2000);
 
@@ -43,6 +43,7 @@ const Portafolio2 = () => {
                     >
                         {/* slide 1 */}
                         <div className='w-full'>
+                            {/* image xs */}
                             <div className='lg:hidden'>
                                 <Image
                                     className="h-auto w-[100%]"
@@ -52,8 +53,10 @@ const Portafolio2 = () => {
                                     height={100}
                                 />
                             </div>
+                            {/* image xs */}
                             <div className='hidden lg:block' onMouseEnter={() => handleHover(true)} onMouseLeave={() => handleHover(false)}>
-                                <div className='grid grid-cols-3'>
+                                <div className='grid grid-cols-3 gap-3'>
+                                    {/* col 1 */}
                                     <div className='w-full'>
                                         <div className='relative w-full h-full'>
                                             <Image
@@ -74,6 +77,63 @@ const Portafolio2 = () => {
                                             />
                                         </div>
                                     </div>
+                                    {/* col 1 */}
+                                    {/* col 2 */}
+                                    <div className='w-full col col-span-2'>
+                                        <div className='relative w-full h-full'>
+                                            <Image
+                                                className={`h-auto w-[100%] ${currentImageIndex !== 0 && 'opacity-0'}`}
+                                                src="/portafolio/branding-1/item-3.webp"
+                                                width={100}
+                                                height={100}
+                                                objectFit="cover"
+                                                alt="Imagen 1"
+                                            />
+                                            <Image
+                                                className={`h-auto w-[100%] absolute top-0 left-0 ${currentImageIndex === 0 && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
+                                                src="/portafolio/branding-1/item-4.webp"
+                                                width={100}
+                                                height={100}
+                                                objectFit="cover"
+                                                alt="Imagen 2"
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* col 2 */}
+                                    {/* col 3 */}
+                                    <div className='w-full col col-span-2'>
+                                        <div className='relative w-full h-full'>
+                                            <Image
+                                                className={`h-auto w-[100%] ${currentImageIndex !== 0 && 'opacity-0'}`}
+                                                src="/portafolio/branding-1/item-4.webp"
+                                                width={100}
+                                                height={100}
+                                                objectFit="cover"
+                                                alt="Imagen 1"
+                                            />
+                                            <Image
+                                                className={`h-auto w-[100%] absolute top-0 left-0 ${currentImageIndex === 0 && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
+                                                src="/portafolio/branding-1/item-5.webp"
+                                                width={100}
+                                                height={100}
+                                                objectFit="cover"
+                                                alt="Imagen 2"
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* col 3 */}
+                                    {/* col 4 */}
+                                    <div className='w-full col col-span-1'>
+                                        <Image
+                                            className='h-auto w-[100%]'
+                                            src="/portafolio/branding-1/item-6.webp"
+                                            width={100}
+                                            height={100}
+                                            objectFit="cover"
+                                            alt="Imagen 2"
+                                        />
+                                    </div>
+                                    {/* col 4 */}
                                 </div>
                             </div>
                         </div>
