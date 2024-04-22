@@ -65,7 +65,7 @@ const Portafolio2 = () => {
                 <div className='lg:order-1'>
                     <Slider
                         style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}
-                        className='slider w-[85%] sm:w-[90%] md:w-[93%] lg:w-[95%] mx-auto p-6 rounded-[15px]'
+                        className='slider w-[85%] sm:w-[90%] md:w-[93%] lg:w-[95%] mx-auto p-6 rounded-[15px] lg:h-[410px] xl:h-[520px] 2xl:h-[635px]'
                         {...settings}
                     >
                         {/* slide 1 */}
@@ -132,7 +132,6 @@ const Portafolio2 = () => {
                                             </div>
                                         </div>
                                     </div>
-
                                     {/* col 2 */}
                                 </div>
                                 <div className='grid grid-cols-2 gap-3 mt-3'>
@@ -268,9 +267,7 @@ const Portafolio2 = () => {
                                                 sizes="100vw"
                                             />
                                         </div>
-
                                     </div>
-
                                     {/* col 3 */}
                                     {/* col 4 */}
                                     <div className='w-full col col-span-1'>
@@ -291,7 +288,52 @@ const Portafolio2 = () => {
                         {/* slide 2 */}
                         {/* slide 3 */}
                         <div>
-                            3
+                            <div className='grid grid-cols-3 gap-3'>
+                                <div className='col col-span-2 flex items-center'>
+                                    <Image
+                                        className='h-auto w-[100%]'
+                                        src="/portafolio/branding-3/item-4.webp"
+                                        width={100}
+                                        height={100}
+                                        objectFit="cover"
+                                        alt="Imagen 2"
+                                        sizes="100vw"
+                                    />
+                                </div>
+                                <div className='col col-span-1'>
+                                    <Image
+                                        className='h-auto w-[100%]'
+                                        src="/portafolio/branding-3/item-2.webp"
+                                        width={100}
+                                        height={100}
+                                        objectFit="cover"
+                                        alt="Imagen 2"
+                                        sizes="100vw"
+                                    />
+                                </div>
+                                <div className='col col-span-2'>
+                                    <Image
+                                        className='h-auto w-[55%] mx-auto'
+                                        src="/portafolio/branding-3/item-1.webp"
+                                        width={100}
+                                        height={100}
+                                        objectFit="cover"
+                                        alt="Imagen 2"
+                                        sizes="100vw"
+                                    />
+                                </div>
+                                <div className='col col-span-1'>
+                                    <Image
+                                        className='h-auto w-[50%]'
+                                        src="/portafolio/branding-3/item-3.webp"
+                                        width={100}
+                                        height={100}
+                                        objectFit="cover"
+                                        alt="Imagen 2"
+                                        sizes="100vw"
+                                    />
+                                </div>
+                            </div>
                         </div>
                         {/* slide 3 */}
                     </Slider>
