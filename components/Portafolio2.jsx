@@ -178,8 +178,115 @@ const Portafolio2 = () => {
                         </div>
                         {/* slide 1 */}
                         {/* slide 2 */}
-                        <div>
-                            2
+                        <div className='w-full'>
+                            {/* image xs */}
+                            <div className='lg:hidden'>
+                                <Image
+                                    className="h-auto w-[100%]"
+                                    src="/portafolio/branding-1/item-3.webp"
+                                    alt="portafolio"
+                                    width={100}
+                                    height={100}
+                                />
+                            </div>
+                            {/* image xs */}
+                            <div className='hidden lg:block' onMouseEnter={() => handleHover(true)} onMouseLeave={() => handleHover(false)}>
+                                <div className='grid grid-cols-3 gap-3'>
+                                    {/* col 1 */}
+                                    <div className='w-full'>
+                                        <div className='relative w-full h-full'>
+                                            <Image
+                                                className={`h-auto w-[100%] ${currentImageIndices[0] !== 0 && 'opacity-0'}`}
+                                                src="/portafolio/branding-2/item-4.webp"
+                                                width={100}
+                                                height={100}
+                                                objectFit="cover"
+                                                alt="Imagen 1"
+                                                sizes="100vw"
+                                            />
+                                            <Image
+                                                className={`h-auto w-[100%] absolute top-0 left-0 ${currentImageIndices[0] === 0 && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
+                                                src="/portafolio/branding-2/item-5.webp"
+                                                width={100}
+                                                height={100}
+                                                objectFit="cover"
+                                                alt="Imagen 2"
+                                                sizes="100vw"
+                                            />
+                                        </div>
+                                    </div>
+                                    {/* col 1 */}
+                                    {/* col 2 */}
+                                    <div className='flex items-center justify-center col col-span-2'>
+                                        <div className='w-full  '>
+                                            <div className='relative w-full h-full '>
+                                                <Image
+                                                    className={`h-auto w-[100%] ${currentImageIndices[1] !== 0 && 'opacity-0'}`}
+                                                    src="/portafolio/branding-2/item-2.webp"
+                                                    width={100}
+                                                    height={100}
+                                                    objectFit="cover"
+                                                    alt="Imagen 1"
+                                                    sizes="100vw"
+                                                />
+                                                <Image
+                                                    className={`h-auto w-[100%] absolute top-0 left-0 ${currentImageIndices[1] === 0 && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
+                                                    src="/portafolio/branding-2/item-3.webp"
+                                                    width={100}
+                                                    height={100}
+                                                    objectFit="cover"
+                                                    alt="Imagen 2"
+                                                    sizes="100vw"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* col 2 */}
+                                </div>
+                                <div className='grid grid-cols-2 gap-3 mt-3'>
+                                    {/* col 3 */}
+                                    <div className='w-full col col-span-1 flex items-center justify-center'>
+
+                                        <div className='relative h-full mx-auto flex items-center justify-center'>
+                                            <Image
+                                                className={`h-auto w-[50%] ${currentImageIndices[2] !== 0 && 'opacity-0'}`}
+                                                src="/portafolio/branding-2/item-5.webp"
+                                                width={100}
+                                                height={100}
+                                                objectFit="cover"
+                                                alt="Imagen 1"
+                                                sizes="100vw"
+                                            />
+                                            <Image
+                                                className={`h-auto w-[50%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${currentImageIndices[2] === 0 && 'opacity-0 hover:opacity-100 transition-opacity duration-300'}`}
+                                                src="/portafolio/branding-2/item-6.webp"
+                                                width={100}
+                                                height={100}
+                                                objectFit="cover"
+                                                alt="Imagen 2"
+                                                sizes="100vw"
+                                            />
+                                        </div>
+
+                                    </div>
+
+                                    {/* col 3 */}
+                                    {/* col 4 */}
+                                    <div className='w-full col col-span-1'>
+                                        <Image
+                                            className='h-auto w-[50%] mx-auto'
+                                            src="/portafolio/branding-2/item-7.webp"
+                                            width={100}
+                                            height={100}
+                                            objectFit="cover"
+                                            alt="Imagen 2"
+                                            sizes="100vw"
+                                        />
+                                    </div>
+                                    {/* col 4 */}
+                                </div>
+                            </div>
                         </div>
                         {/* slide 2 */}
                         {/* slide 3 */}
