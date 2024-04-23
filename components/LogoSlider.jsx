@@ -16,7 +16,6 @@ const LogoSlider = () => {
     '/logos/item-7.webp',
     '/logos/item-8.webp',
     '/logos/item-9.webp',
-    '/logos/item-0.webp',
     '/logos/item-10.webp',
     '/logos/item-11.webp',
     '/logos/item-12.webp',

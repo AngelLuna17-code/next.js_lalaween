@@ -8,6 +8,7 @@ import Mapa from "../../components/Mapa";
 import Contacto from "../../components/Contacto";
 import PortafolioWeb from "../../components/PortafolioWeb";
 import Portafolio2 from "../../components/Portafolio2"
+import Port from "../../components/Port";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <About />
         <ServiceCards />
+        <Port />
         <Portafolio2 />
         <PortafolioWeb />
         <LogoSlider />
