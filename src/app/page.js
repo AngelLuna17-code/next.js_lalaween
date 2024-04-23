@@ -7,8 +7,7 @@ import LogoSlider from "../../components/LogoSlider"
 import Mapa from "../../components/Mapa";
 import Contacto from "../../components/Contacto";
 import PortafolioWeb from "../../components/PortafolioWeb";
-import Portafolio2 from "../../components/Portafolio2"
-import Port from "../../components/Port";
+import Grid from "../../components/Grid";
 
 export default function Home() {
   return (
@@ -18,8 +17,7 @@ export default function Home() {
         <Hero />
         <About />
         <ServiceCards />
-        <Port />
-        <Portafolio2 />
+        <Grid />
         <PortafolioWeb />
         <LogoSlider />
         <Mapa />
