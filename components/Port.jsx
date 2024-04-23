@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import Image from 'next/image';
 
-const YourComponent = () => {
+const Port = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImage, setModalImage] = useState('');
 
@@ -113,4 +113,4 @@ const YourComponent = () => {
   );
 };
 
-export default YourComponent;
+export default Port;
