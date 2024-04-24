@@ -4,22 +4,26 @@ import Image from 'next/image';
 const Grid = () => {
 
     const images = [
-        '/grid/1.webp',
-        '/grid/2.webp',
-        '/grid/3.webp',
-        '/grid/4.webp',
-        '/grid/5.webp',
-        '/grid/6.webp',
-        '/grid/7.webp',
-        '/grid/8.webp',
-        '/grid/9.webp',
-        '/grid/10.webp',
-        '/grid/11.webp',
-        '/grid/12.webp',
-        '/grid/13.webp',
-        '/grid/14.webp',
-        '/grid/15.webp',
-        '/grid/16.webp',
+        '/grid/item-1.avif',
+        '/grid/item-2.avif',
+        '/grid/item-3.avif',
+        '/grid/item-4.avif',
+        '/grid/item-5.avif',
+        '/grid/item-6.avif',
+        '/grid/item-7.avif',
+        '/grid/item-8.avif',
+        '/grid/item-9.avif',
+        '/grid/item-10.avif',
+        '/grid/item-11.avif',
+        '/grid/item-12.avif',
+        '/grid/item-13.avif',
+        '/grid/item-14.avif',
+        '/grid/item-15.avif',
+        '/grid/item-16.avif',
+        '/grid/item-17.avif',
+        '/grid/item-18.avif',
+        '/grid/item-19.avif',
+        '/grid/item-20.avif',
     ];
 
     const chunkArray = (arr, chunkSize) => {
@@ -44,7 +48,7 @@ const Grid = () => {
                                         <Image
                                             className='h-auto- w-[100%] mt-3'
                                             src={imageUrl}
-                                            alt={`Imagen ${index * 4 + idx + 1}`}
+                                            alt={`Imagen ${index * 5 + idx + 1}`}
                                             width={300}
                                             height={300}
                                         />
