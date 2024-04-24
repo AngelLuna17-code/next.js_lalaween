@@ -36,7 +36,7 @@ const Grid = () => {
         <section className='py-[50px] px-[15px]'>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 <div className='order-2 lg:order-1'>
-                    <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 h-[700px] overflow-y-auto'>
+                    <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 h-[400px] md:h-[600px] lg:h-[600px] overflow-y-auto'>
                         {chunkedImages.map((imageGroup, index) => (
                             <div key={index}>
                                 {imageGroup.map((imageUrl, idx) => (
