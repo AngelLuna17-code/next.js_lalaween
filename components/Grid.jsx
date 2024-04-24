@@ -22,7 +22,6 @@ const Grid = () => {
         '/grid/16.webp',
     ];
 
-    // Función para dividir el arreglo en grupos de 4
     const chunkArray = (arr, chunkSize) => {
         const chunkedArray = [];
         for (let i = 0; i < arr.length; i += chunkSize) {
@@ -31,29 +30,44 @@ const Grid = () => {
         return chunkedArray;
     };
 
-    // Dividir las imágenes en grupos de 4
     const chunkedImages = chunkArray(images, 4);
 
     return (
         <section className='py-[50px] px-[15px]'>
-            <div className='container mx-auto grid grid-cols-2 lg:grid-cols-4 h-[600px] overflow-y-auto'>
-                {/* Mapear cada grupo de imágenes */}
-                {chunkedImages.map((imageGroup, index) => (
-                    <div key={index}>
-                        {/* Mapear las imágenes en cada grupo */}
-                        {imageGroup.map((imageUrl, idx) => (
-                            <div key={idx}>
-                                <Image
-                                    className='h-auto- w-[100%]'
-                                    src={imageUrl}
-                                    alt={`Imagen ${index * 4 + idx + 1}`}
-                                    width={300}
-                                    height={300}
-                                />
+            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
+                <div className='order-2 lg:order-1'>
+                    <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 h-[700px] overflow-y-auto'>
+                        {chunkedImages.map((imageGroup, index) => (
+                            <div key={index}>
+                                {imageGroup.map((imageUrl, idx) => (
+                                    <div key={idx}>
+                                        <Image
+                                            className='h-auto- w-[100%] mt-3'
+                                            src={imageUrl}
+                                            alt={`Imagen ${index * 4 + idx + 1}`}
+                                            width={300}
+                                            height={300}
+                                        />
+                                    </div>
+                                ))}
                             </div>
                         ))}
                     </div>
-                ))}
+                </div>
+                <div className='order-1 lg:order-2 flex items-center justify-center'>
+                    <div>
+                        <h2 className='text-white text-center text-[25px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl-[44px] 2xl:text-[48px] title-container '>
+                            Mira nuestro
+                            <br />
+                            <span className='text-white text-center text-[25px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl-[44px] 2xl:text-[48px] title-container title'>
+                                portafolio
+                            </span>
+                        </h2>
+                        <p className='text-center mt-3'>
+                            Nosotros somos LalaWeen, agencia de publicidad y diseño. El creative team de diseño y marketing, que tu negocio necesita. Con la experiencia que nos respalda llevaremos tu negocio al siguiente nivel.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     );
