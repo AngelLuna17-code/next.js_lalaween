@@ -7,6 +7,7 @@ import Mapa from "../../components/Mapa";
 import Contacto from "../../components/Contacto";
 import PortafolioWeb from "../../components/PortafolioWeb";
 import Grid from "../../components/Grid";
+import Flip from "../../components/Flip";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <ServiceCards />
         <Grid />
+        <Flip />
         <PortafolioWeb />
         <LogoSlider />
         <Mapa />
