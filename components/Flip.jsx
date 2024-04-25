@@ -1,21 +1,27 @@
 import React from 'react';
-
+import Image from 'next/image';
 
 const Flip = ({ frontImageSrc, backImageSrc }) => {
     return (
-        <div class="flip-card-container">
-            <div class="flip-card">
-                <div class="flip-card-front">
-                    <img
+        <div className="flip-card-container">
+            <div className="flip-card">
+                <div className="flip-card-front">
+                    <Image
+                        className='h-auto w-[100%]'
                         src="/grid/item-1.avif"
-                        alt="Albert Einstein"
+                        alt="Front Image"
+                        width={0}
+                        height={0}
                     />
                 </div>
-                <div class="flip-card-back">
-                    <p>
-                        "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."
-                        <span>- Albert Einstein -</span>
-                    </p>
+                <div className="flip-card-back">
+                    <Image
+                        className='h-auto w-[100%]'
+                        src="/grid/item-9.avif"
+                        alt="Front Image"
+                        width={0}
+                        height={0}
+                    />
                 </div>
             </div>
         </div>
@@ -23,6 +29,3 @@ const Flip = ({ frontImageSrc, backImageSrc }) => {
 };
 
 export default Flip;
-
-
-
