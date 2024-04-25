@@ -5,7 +5,8 @@ import Flip from '../components/Flip';
 const Grid = () => {
 
     const columnImages = [
-        [<Flip />,
+        [
+            <Flip />,
             '/grid/item-1.avif',
             '/grid/item-2.avif',
             '/grid/item-3.avif',
