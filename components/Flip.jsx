@@ -45,7 +45,7 @@ const Flip2 = ({ frontImageSrc, backImageSrc }) => {
     useEffect(() => {
         const interval = setInterval(() => {
             setFlipped(prevFlipped => !prevFlipped);
-        }, 5000);
+        }, 3000);
 
         return () => clearInterval(interval);
     }, []);
