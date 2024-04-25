@@ -39,5 +39,41 @@ const Flip = ({ frontImageSrc, backImageSrc }) => {
     );
 };
 
-export default Flip;
+const Flip2 = ({ frontImageSrc, backImageSrc }) => {
+    const [flipped, setFlipped] = useState(false);
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFlipped(prevFlipped => !prevFlipped);
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className="flip-card-container-xl overflow-hidden">
+            <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
+                <div className="flip-card-front">
+                    <Image
+                        className='h-auto w-[100%]'
+                        src="/grid/item-2.avif"
+                        alt="Front Image"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+                <div className="flip-card-back">
+                    <Image
+                        className='h-auto w-[100%]'
+                        src="/grid/item-15.avif"
+                        alt="Front Image"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export { Flip, Flip2 };
