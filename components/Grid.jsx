@@ -1,12 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import { Flip2 } from '../components/Flip'; // Importa solo Flip2 desde el archivo donde está definido
+import { Flip, Flip2 } from '../components/Flip';
 const Grid = () => {
 
     const columnImages = [
         [
-            <Flip2 key="flip2" />,     
-                   '/grid/item-1.avif',
+            <Flip key="Flip" />,
+            <Flip2 key="flip2" />,
+            '/grid/item-1.avif',
             '/grid/item-2.avif',
             '/grid/item-3.avif',
             '/grid/item-4.avif',
