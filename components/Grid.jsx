@@ -1,10 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
+import Flip from '../components/Flip';
 
 const Grid = () => {
 
     const columnImages = [
-        [
+        [<Flip />,
             '/grid/item-1.avif',
             '/grid/item-2.avif',
             '/grid/item-3.avif',
@@ -159,17 +160,21 @@ const Grid = () => {
                 <div className='order-2 lg:order-1'>
                     <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 h-[400px] md:h-[600px] lg:h-[600px] overflow-y-auto rounded-[15px]'>
                         {columnImages.map((column, colIndex) => (
-                            <div key={colIndex}
-                            >
-                                {column.map((image, imgIndex) => (
-                                    <Image
-                                        className='h-auto- w-[100%] mt-3 rounded-[15px]'
-                                        width={300}
-                                        height={300}
-                                        key={imgIndex}
-                                        src={image}
-                                        alt={`Imagen ${colIndex + 1}-${imgIndex + 1}`}
-                                    />
+                            <div key={colIndex}>
+                                {column.map((item, imgIndex) => (
+                                    // Verifica si el elemento es un string o un componente
+                                    typeof item === 'string' ? (
+                                        <Image
+                                            className='h-auto- w-[100%] mt-3 rounded-[15px]'
+                                            width={300}
+                                            height={300}
+                                            key={imgIndex}
+                                            src={item}
+                                            alt={`Imagen ${colIndex + 1}-${imgIndex + 1}`}
+                                        />
+                                    ) : (
+                                        item
+                                    )
                                 ))}
                             </div>
                         ))}
