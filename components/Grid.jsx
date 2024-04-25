@@ -163,21 +163,21 @@ const Grid = () => {
                         {columnImages.map((column, colIndex) => (
                             <div key={colIndex}>
                                 {column.map((item, imgIndex) => (
-                                    // Verifica si el elemento es un string o un componente
                                     typeof item === 'string' ? (
                                         <Image
                                             className='h-auto- w-[100%] mt-3 rounded-[15px]'
                                             width={300}
                                             height={300}
-                                            key={imgIndex}
+                                            key={`${colIndex}-${imgIndex}`} // Unique key
                                             src={item}
                                             alt={`Imagen ${colIndex + 1}-${imgIndex + 1}`}
                                         />
                                     ) : (
-                                        item
+                                        <div key={`${colIndex}-${imgIndex}`}>{item}</div> // Unique key
                                     )
                                 ))}
                             </div>
+
                         ))}
                     </div>
                 </div>
