@@ -6,7 +6,7 @@ const Grid = () => {
 
     const columnImages = [
         [
-            <Flip />,
+            <Flip key="flip" />,
             '/grid/item-1.avif',
             '/grid/item-2.avif',
             '/grid/item-3.avif',
