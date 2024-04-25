@@ -1,26 +1,27 @@
+
 import React from 'react';
 import Image from 'next/image';
 
 const Flip = ({ frontImageSrc, backImageSrc }) => {
     return (
-        <div className="flip-card-container">
+        <div className="flip-card-container-xl overflow-hidden">
             <div className="flip-card">
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%]'
                         src="/grid/item-1.avif"
                         alt="Front Image"
-                        width={0}
-                        height={0}
+                        width={300}
+                        height={300}
                     />
                 </div>
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%]'
-                        src="/grid/item-9.avif"
+                        src="/grid/item-14.avif"
                         alt="Front Image"
-                        width={0}
-                        height={0}
+                        width={300}
+                        height={300}
                     />
                 </div>
             </div>
@@ -29,3 +30,5 @@ const Flip = ({ frontImageSrc, backImageSrc }) => {
 };
 
 export default Flip;
+
+
