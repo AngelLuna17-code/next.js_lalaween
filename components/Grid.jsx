@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Flip, Flip2, Flip3, Flip4, Flip5 } from '../components/Flip';
+import { Flip, Flip2, Flip3, Flip4, Flip5, Flip6, Flip7, Flip8, Flip9 } from '../components/Flip';
 const Grid = () => {
 
     const columnImages = [
@@ -12,14 +12,12 @@ const Grid = () => {
             '/grid/item-7.avif',
             '/grid/item-8.avif',
             '/grid/item-9.avif',
-            '/grid/item-10.avif',
-            '/grid/item-11.avif',
+            <Flip6 key="flip6" />,
             '/grid/item-12.avif',
             '/grid/item-13.avif',
             '/grid/item-14.avif',
             '/grid/item-15.avif',
-            '/grid/item-16.avif',
-            '/grid/item-17.avif',
+            <Flip7 key="flip7" />,
             '/grid/item-18.avif',
             '/grid/item-19.avif',
             '/grid/item-20.avif',
@@ -29,8 +27,7 @@ const Grid = () => {
             '/grid/item-24.avif',
             '/grid/item-25.avif',
             '/grid/item-26.avif',
-            '/grid/item-27.avif',
-            '/grid/item-28.avif',
+            <Flip8 key="flip8" />,
             '/grid/item-29.avif',
             '/grid/item-30.avif',
             '/grid/item-31.avif',
@@ -47,23 +44,23 @@ const Grid = () => {
             '/grid/item-40.avif',
             '/grid/item-41.avif',
             '/grid/item-42.avif',
-            '/grid/item-43.avif',
-            '/grid/item-44.avif',
-            '/grid/item-45.avif',
-            '/grid/item-46.avif',
+            <Flip8 key="flip8" />,
             '/grid/item-47.avif',
             '/grid/item-48.avif',
             '/grid/item-49.avif',
             '/grid/item-50.avif',
-            '/grid/item-51.avif',
-            '/grid/item-52.avif',
+            <Flip9 key="flip9" />,
             '/grid/item-53.avif',
             '/grid/item-54.avif',
             '/grid/item-55.avif',
             '/grid/item-56.avif',
             '/grid/item-57.avif',
+
+
             '/grid/item-58.avif',
             '/grid/item-59.avif',
+
+            
             '/grid/item-60.avif',
             '/grid/item-61.avif',
             '/grid/item-62.avif',
