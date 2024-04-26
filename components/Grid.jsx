@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Flip, Flip2, Flip3, Flip4, Flip5, Flip6, Flip7, Flip8, Flip9 } from '../components/Flip';
+import { Flip, Flip2, Flip3, Flip4, Flip5, Flip6, Flip7, Flip8, Flip9, Flip10 } from '../components/Flip';
 const Grid = () => {
 
     const columnImages = [
@@ -27,7 +27,7 @@ const Grid = () => {
             '/grid/item-24.avif',
             '/grid/item-25.avif',
             '/grid/item-26.avif',
-            <Flip8 key="flip8" />,
+            <Flip10 key="flip10" />,
             '/grid/item-29.avif',
             '/grid/item-30.avif',
             '/grid/item-31.avif',
