@@ -18,7 +18,7 @@ const Flip = ({ frontImageSrc, backImageSrc }) => {
             <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
                 <div className="flip-card-front">
                     <Image
-                        className='h-auto w-[100%]'
+                        className='h-auto w-[100%] rounded-[15px]'
                         src="/grid/item-1.avif"
                         alt="Front Image"
                         width={300}
@@ -27,8 +27,8 @@ const Flip = ({ frontImageSrc, backImageSrc }) => {
                 </div>
                 <div className="flip-card-back">
                     <Image
-                        className='h-auto w-[100%]'
-                        src="/grid/item-14.avif"
+                        className='h-auto w-[100%] rounded-[15px]'
+                        src="/grid/item-2.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -51,12 +51,12 @@ const Flip2 = ({ frontImageSrc, backImageSrc }) => {
     }, []);
 
     return (
-        <div className="flip-card-container-xl overflow-hidden">
-            <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
+        <div className="flip-card-container-sm">
+            <div className={`flip-card rounded-[15px] overflow-hidden ${flipped ? 'flipped' : ''}`}>
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%]'
-                        src="/grid/item-2.avif"
+                        src="/grid/item-5.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -64,8 +64,8 @@ const Flip2 = ({ frontImageSrc, backImageSrc }) => {
                 </div>
                 <div className="flip-card-back">
                     <Image
-                        className='h-auto w-[100%]'
-                        src="/grid/item-15.avif"
+                        className='h-auto w-[100%] rounded-[15px]'
+                        src="/grid/item-6.avif"
                         alt="Front Image"
                         width={300}
                         height={300}

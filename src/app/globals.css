@@ -211,11 +211,24 @@ iframe {
 
 
 /* Flip images */
+/* xl */
 .flip-card-container-xl {
   width: 159px;
   height: 285.36px;
   perspective: 1000px;
 }
+
+/* xl */
+/* md */
+/* md */
+/* sm */
+.flip-card-container-sm {
+  width: 160.5px;
+  height: 117.3px;
+  perspective: 1000px;
+}
+
+/* sm */
 
 .flip-card {
   position: relative;
@@ -242,6 +255,7 @@ iframe {
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
 /* Flip images */
 
 .special-grid>div>*:not(:first-child) {

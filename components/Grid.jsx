@@ -7,12 +7,8 @@ const Grid = () => {
         [
             <Flip key="Flip" />,
             <Flip2 key="flip2" />,
-            '/grid/item-1.avif',
-            '/grid/item-2.avif',
             '/grid/item-3.avif',
             '/grid/item-4.avif',
-            '/grid/item-5.avif',
-            '/grid/item-6.avif',
             '/grid/item-7.avif',
             '/grid/item-8.avif',
             '/grid/item-9.avif',
