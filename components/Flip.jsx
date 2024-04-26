@@ -51,11 +51,11 @@ const Flip2 = ({ frontImageSrc, backImageSrc }) => {
     }, []);
 
     return (
-        <div className="flip-card-container-sm">
-            <div className={`flip-card rounded-[15px] overflow-hidden ${flipped ? 'flipped' : ''}`}>
+        <div className="flip-card-container-sm overflow-hidden">
+            <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
                 <div className="flip-card-front">
                     <Image
-                        className='h-auto w-[100%]'
+                        className='h-auto w-[100%] rounded-[15px]'
                         src="/grid/item-5.avif"
                         alt="Front Image"
                         width={300}
