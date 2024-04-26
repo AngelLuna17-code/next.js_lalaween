@@ -483,5 +483,42 @@ const Flip13 = ({ frontImageSrc, backImageSrc }) => {
     );
 };
 
+const Flip14 = ({ frontImageSrc, backImageSrc }) => {
+    const [flipped, setFlipped] = useState(false);
 
-export { Flip, Flip2, Flip3, Flip4, Flip5, Flip6, Flip7, Flip8, Flip9, Flip10, Flip11, Flip12, Flip13 };
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFlipped(prevFlipped => !prevFlipped);
+        }, 3500);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className="flip-card-container-md overflow-hidden">
+            <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
+                <div className="flip-card-front">
+                    <Image
+                        className='h-auto w-[100%] rounded-[15px]'
+                        src="/grid/item-80.avif"
+                        alt="Front Image"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+                <div className="flip-card-back">
+                    <Image
+                        className='h-auto w-[100%] rounded-[15px]'
+                        src="/grid/item-81.avif"
+                        alt="Front Image"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+
+export { Flip, Flip2, Flip3, Flip4, Flip5, Flip6, Flip7, Flip8, Flip9, Flip10, Flip11, Flip12, Flip13, Flip14 };
