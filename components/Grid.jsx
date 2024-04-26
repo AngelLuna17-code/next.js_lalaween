@@ -1,6 +1,21 @@
 import React from 'react';
 import Image from 'next/image';
-import { Flip, Flip2, Flip3, Flip4, Flip5, Flip6, Flip7, Flip8, Flip9, Flip10, Flip11 } from '../components/Flip';
+import {
+Flip,
+Flip2,
+Flip3,
+Flip4,
+Flip5,
+Flip6,
+Flip7,
+Flip8,
+Flip9,
+Flip10,
+Flip11,
+Flip12,
+Flip13
+} from '../components/Flip';
+
 const Grid = () => {
 
     const columnImages = [
@@ -63,8 +78,7 @@ const Grid = () => {
             '/grid/item-64.avif',
             '/grid/item-65.avif',
             '/grid/item-66.avif',
-            '/grid/item-67.avif',
-            '/grid/item-68.avif',
+            <Flip12 key="flip12" />
         ],
         [
             <Flip3 key="flip3" />,
@@ -74,8 +88,7 @@ const Grid = () => {
             '/grid/item-73.avif',
             '/grid/item-74.avif',
             '/grid/item-75.avif',
-            '/grid/item-76.avif',
-            '/grid/item-77.avif',
+            <Flip13 key="flip13" />,
             '/grid/item-78.avif',
             '/grid/item-79.avif',
             '/grid/item-80.avif',
