@@ -212,6 +212,7 @@ iframe {
 
 /* Flip images */
 /* xl */
+
 .flip-card-container-xl {
   width: 159px;
   height: 244.09px;
@@ -261,6 +262,11 @@ iframe {
   perspective: 1000px;
 }
 
+@media (min-width: 1536px) {
+  .flip-card-container-md {
+    width: 299px;
+  }
+}
 /* md */
 /* sm */
 .flip-card-container-sm {
