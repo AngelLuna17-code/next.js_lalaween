@@ -210,7 +210,7 @@ iframe {
 }
 
 
-
+/* Flip images */
 .flip-card-container-xl {
   width: 159px;
   height: 285.36px;
@@ -242,4 +242,9 @@ iframe {
 
 .flip-card-back {
   transform: rotateY(180deg);
+}
+/* Flip images */
+
+.special-grid>div>*:not(:first-child) {
+  margin-top: 10px;
 }

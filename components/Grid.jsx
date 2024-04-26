@@ -159,13 +159,13 @@ const Grid = () => {
         <section className='py-[50px] px-[15px]'>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 <div className='order-2 lg:order-1'>
-                    <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 h-[400px] md:h-[600px] lg:h-[600px] overflow-y-auto rounded-[15px]'>
+                    <div className='special-grid grid grid-cols-2 lg:grid-cols-4 gap-3 h-[400px] md:h-[600px] lg:h-[600px] overflow-y-auto rounded-[15px]'>
                         {columnImages.map((column, colIndex) => (
                             <div key={colIndex}>
                                 {column.map((item, imgIndex) => (
                                     typeof item === 'string' ? (
                                         <Image
-                                            className='h-auto- w-[100%] mt-3 rounded-[15px]'
+                                            className='h-auto- w-[100%] rounded-[15px]'
                                             width={300}
                                             height={300}
                                             key={`${colIndex}-${imgIndex}`} // Unique key
@@ -177,7 +177,6 @@ const Grid = () => {
                                     )
                                 ))}
                             </div>
-
                         ))}
                     </div>
                 </div>
