@@ -220,6 +220,11 @@ iframe {
 
 /* xl */
 /* md */
+.flip-card-container-md {
+  width: 176.75px;
+  height: 176.75px;
+  perspective: 1000px;
+}
 /* md */
 /* sm */
 .flip-card-container-sm {

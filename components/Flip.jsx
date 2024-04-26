@@ -76,4 +76,42 @@ const Flip2 = ({ frontImageSrc, backImageSrc }) => {
     );
 };
 
-export { Flip, Flip2 };
+const Flip3 = ({ frontImageSrc, backImageSrc }) => {
+    const [flipped, setFlipped] = useState(false);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFlipped(prevFlipped => !prevFlipped);
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className="flip-card-container-md overflow-hidden">
+            <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
+                <div className="flip-card-front">
+                    <Image
+                        className='h-auto w-[100%] rounded-[15px]'
+                        src="/grid/item-69.avif"
+                        alt="Front Image"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+                <div className="flip-card-back">
+                    <Image
+                        className='h-auto w-[100%] rounded-[15px]'
+                        src="/grid/item-70.avif"
+                        alt="Front Image"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+
+export { Flip, Flip2, Flip3 };

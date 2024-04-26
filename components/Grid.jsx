@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Flip, Flip2 } from '../components/Flip';
+import { Flip, Flip2, Flip3 } from '../components/Flip';
 const Grid = () => {
 
     const columnImages = [
@@ -75,6 +75,7 @@ const Grid = () => {
             '/grid/item-68.avif',
         ],
         [
+            <Flip3 key="flip3" />,
             '/grid/item-69.avif',
             '/grid/item-70.avif',
             '/grid/item-71.avif',
@@ -111,7 +112,6 @@ const Grid = () => {
             '/grid/item-102.avif'
         ],
         [
-            '/grid/item-102.avif',
             '/grid/item-103.avif',
             '/grid/item-104.avif',
             '/grid/item-105.avif',
@@ -155,7 +155,7 @@ const Grid = () => {
         <section className='py-[50px] px-[15px]'>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 <div className='order-2 lg:order-1'>
-                    <div className='special-grid grid grid-cols-2 lg:grid-cols-4 gap-3 h-[400px] md:h-[600px] lg:h-[600px] overflow-y-auto rounded-[15px]'>
+                    <div className='special-grid grid grid-cols-2 lg:grid-cols-4 gap-3 h-[400px] md:h-[600px] lg:h-[600px] overflow-y-auto overflow-x-hidden rounded-[15px]'>
                         {columnImages.map((column, colIndex) => (
                             <div key={colIndex}>
                                 {column.map((item, imgIndex) => (
@@ -164,12 +164,15 @@ const Grid = () => {
                                             className='h-auto- w-[100%] rounded-[15px]'
                                             width={300}
                                             height={300}
-                                            key={`${colIndex}-${imgIndex}`} // Unique key
+                                            key={`${colIndex}-${imgIndex}`}
                                             src={item}
                                             alt={`Imagen ${colIndex + 1}-${imgIndex + 1}`}
                                         />
                                     ) : (
-                                        <div key={`${colIndex}-${imgIndex}`}>{item}</div> // Unique key
+                                        <div
+                                            key={`${colIndex}-${imgIndex}`}>
+                                            {item}
+                                        </div>
                                     )
                                 ))}
                             </div>
