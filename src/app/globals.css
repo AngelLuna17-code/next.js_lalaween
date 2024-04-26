@@ -237,7 +237,6 @@ iframe {
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .flip-card-back {
