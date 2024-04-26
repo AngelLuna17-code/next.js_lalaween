@@ -15,6 +15,8 @@ import {
     Flip12,
     Flip13,
     Flip14,
+    Flip15,
+    Flip16
 } from '../components/Flip';
 
 const Grid = () => {
@@ -96,8 +98,7 @@ const Grid = () => {
             '/grid/item-84.avif',
             '/grid/item-85.avif',
             '/grid/item-86.avif',
-            '/grid/item-87.avif',
-            '/grid/item-88.avif',
+            <Flip15 key="flip15" />,
             '/grid/item-89.avif',
             '/grid/item-90.avif',
             '/grid/item-91.avif',
@@ -107,8 +108,7 @@ const Grid = () => {
             '/grid/item-95.avif',
             '/grid/item-96.avif',
             '/grid/item-97.avif',
-            '/grid/item-98.avif',
-            '/grid/item-99.avif',
+            <Flip16 key="flip16" />,
             '/grid/item-100.avif',
             '/grid/item-101.avif',
             '/grid/item-102.avif'
@@ -121,8 +121,12 @@ const Grid = () => {
             '/grid/item-108.avif',
             '/grid/item-109.avif',
             '/grid/item-110.avif',
+
+
             '/grid/item-111.avif',
             '/grid/item-112.avif',
+
+            
             '/grid/item-113.avif',
             '/grid/item-114.avif',
             '/grid/item-115.avif',
