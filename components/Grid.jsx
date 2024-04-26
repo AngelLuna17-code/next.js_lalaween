@@ -76,8 +76,6 @@ const Grid = () => {
         ],
         [
             <Flip3 key="flip3" />,
-            '/grid/item-69.avif',
-            '/grid/item-70.avif',
             '/grid/item-71.avif',
             '/grid/item-72.avif',
             '/grid/item-73.avif',
