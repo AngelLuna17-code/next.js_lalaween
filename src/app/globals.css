@@ -258,13 +258,38 @@ iframe {
 /* md */
 .flip-card-container-md {
   width: 159px;
-  height: 176.75px;
+  height: 159pxpx;
   perspective: 1000px;
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 640px) {
   .flip-card-container-md {
     width: 299px;
+    height: 299px;
+  }
+}
+@media (min-width: 768px) {
+  .flip-card-container-md {
+    width: 363px;
+    height: 363px;
+  }
+}
+@media (min-width: 1024px) {
+  .flip-card-container-md {
+    width: 112.75px;
+    height: 112.75px;
+  }
+}
+@media (min-width: 1280px) {
+  .flip-card-container-md {
+    width: 144.75px;
+    height: 144.75px;
+  }
+}
+@media (min-width: 1536px) {
+  .flip-card-container-md {
+    width: 176.75px;
+    height: 176.75px;
   }
 }
 /* md */
@@ -274,9 +299,6 @@ iframe {
   height: 117.3px;
   perspective: 1000px;
 }
-
-
-
 /* sm */
 
 .flip-card {
