@@ -371,5 +371,5 @@ iframe {
 /* Flip images */
 
 .special-grid>div>*:not(:first-child) {
-  margin-top: 10px;
+  margin-top: 15px;
 }
