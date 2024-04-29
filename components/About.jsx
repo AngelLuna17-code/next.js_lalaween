@@ -38,7 +38,7 @@ const About = () => {
                             ?
                         </h2>
                         <p className='mt-3 mx-auto text-center'>
-                            LalaWeen Creative Team nació en 2020, pero su origen se remonta a 2017 cuando su fundadora comenzó como diseñadora freelancer. Inspirada por su gato Rony, decidió emprender su propia agencia en Guadalajara, incorporándolo en el logotipo como una musa. Ofrececiendo servicios de diseño y gestión de negocios digitales, comprometidos con hacer realidad los sueños de nuestros clientes, gracias al legado inspirador de Rony. En resumen, LalaWeen es el creative team que toda marca necesita.
+                            LalaWeen Creative Team nació en 2020, pero su origen se remonta a 2017 cuando su fundadora comenzó como diseñadora freelancer. Inspirada por su gato Rony, decidió emprender su propia agencia en Guadalajara, incorporándolo en el logotipo como una musa. Ofreciendo servicios de diseño y gestión de negocios digitales, comprometidos con hacer realidad los sueños de nuestros clientes, gracias al legado inspirador de Rony. En resumen, LalaWeen es el creative team que toda marca necesita.
                         </p>
                     </div>
                 </div>
