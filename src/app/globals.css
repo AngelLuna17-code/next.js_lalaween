@@ -268,37 +268,78 @@ iframe {
     height: 299px;
   }
 }
+
 @media (min-width: 768px) {
   .flip-card-container-md {
     width: 363px;
     height: 363px;
   }
 }
+
 @media (min-width: 1024px) {
   .flip-card-container-md {
     width: 112.75px;
     height: 112.75px;
   }
 }
+
 @media (min-width: 1280px) {
   .flip-card-container-md {
     width: 144.75px;
     height: 144.75px;
   }
 }
+
 @media (min-width: 1536px) {
   .flip-card-container-md {
     width: 176.75px;
     height: 176.75px;
   }
 }
+
 /* md */
 /* sm */
 .flip-card-container-sm {
   width: 159px;
-  height: 117.3px;
+  height: 103.33px;
   perspective: 1000px;
 }
+
+@media (min-width: 640px) {
+  .flip-card-container-sm {
+    width: 299px;
+    height: 194.09px;
+  }
+}
+
+@media (min-width: 768px) {
+  .flip-card-container-sm {
+    width: 363px;
+    height: 235.64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flip-card-container-sm {
+    width: 112.75px;
+    height: 73.19px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .flip-card-container-sm {
+    width: 144.75px;
+    height: 93.95px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .flip-card-container-sm {
+    width: 176.75px;
+    height: 114.73px;
+  }
+}
+
 /* sm */
 
 .flip-card {
