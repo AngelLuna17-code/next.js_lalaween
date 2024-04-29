@@ -7,7 +7,7 @@ const Promociones = () => {
     return (
         <main>
             <section>
-                <div className='promo-hero hero-bg py-[130px] px-[15px]'>
+                <div className='promo-hero hero-bg pt-[140px] pb-[100px] px-[15px]'>
                     <div className='container mx-auto'>
                         <h1>
                             Planes
