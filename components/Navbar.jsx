@@ -69,6 +69,7 @@ const Navbar = () => {
               </ul>
             </div>
             {/* Links */}
+            
           </div>
           <div>
             {/* Burger button */}
