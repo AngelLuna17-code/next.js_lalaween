@@ -38,7 +38,9 @@ const Grid = () => {
             /* impresos-1 */
             '/grid/impresos-1/item-7.avif',
             /* impresos-1 */
-
+            /* impresos-2 */
+            '/grid/impresos-2/item-4.avif',
+            /* impresos-2 */
         ],
         [
             /* branding-1 */
@@ -49,6 +51,11 @@ const Grid = () => {
             '/grid/impresos-1/item-2.avif',
             '/grid/impresos-1/item-1.avif',
             /* impresos-1 */
+            /* impresos-2 */
+            <Flip12 key="Flip12" />,
+            /* impresos-2 */
+
+
         ],
         [
             /* branding-2 */
@@ -60,8 +67,11 @@ const Grid = () => {
             /* Branding-3 */
             /* impresos-1 */
             <Flip9 key="Flip9" />,
-            <Flip10 key="Flip10" />
+            <Flip10 key="Flip10" />,
             /* impresos-1 */
+            /* impresos-2 */
+            '/grid/impresos-2/item-3.avif',
+            /* impresos-2 */
         ],
         [
             /* branding-2 */
@@ -73,6 +83,7 @@ const Grid = () => {
             /* branding-3 */
             /* impresos-2 */
             <Flip11 key="Flip11" />,
+            '/grid/impresos-2/item-7.avif',
             /* impresos-2 */
         ],
     ];
