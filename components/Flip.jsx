@@ -19,7 +19,7 @@ const Flip = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-1.avif"
+                        src="/grid/branding-1/item-1.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -28,7 +28,7 @@ const Flip = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-2.avif"
+                        src="/grid/branding-1/item-2.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -56,7 +56,7 @@ const Flip2 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-5.avif"
+                        src="/grid/branding-1/item-3.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -65,7 +65,7 @@ const Flip2 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-6.avif"
+                        src="/grid/branding-1/item-4.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -88,12 +88,12 @@ const Flip3 = ({ frontImageSrc, backImageSrc }) => {
     }, []);
 
     return (
-        <div className="flip-card-container-md overflow-hidden">
+        <div className="flip-card-container-sm overflow-hidden">
             <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-69.avif"
+                        src="/grid/branding-1/item-5.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -102,7 +102,7 @@ const Flip3 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-70.avif"
+                        src="/grid/branding-1/item-6.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -125,12 +125,12 @@ const Flip4 = ({ frontImageSrc, backImageSrc }) => {
     }, []);
 
     return (
-        <div className="flip-card-container-md overflow-hidden">
+        <div className="flip-card-container-xl overflow-hidden">
             <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-104.avif"
+                        src="/grid/branding-1/item-7.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -139,7 +139,7 @@ const Flip4 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-105.avif"
+                        src="/grid/branding-1/item-8.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -162,12 +162,12 @@ const Flip5 = ({ frontImageSrc, backImageSrc }) => {
     }, []);
 
     return (
-        <div className="flip-card-container-md overflow-hidden">
+        <div className="flip-card-container-sm overflow-hidden">
             <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-73.avif"
+                        src="/grid/branding-2/item-2.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -176,7 +176,7 @@ const Flip5 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-74.avif"
+                        src="/grid/branding-2/item-3.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -199,12 +199,12 @@ const Flip6 = ({ frontImageSrc, backImageSrc }) => {
     }, []);
 
     return (
-        <div className="flip-card-container-sm overflow-hidden">
+        <div className="flip-card-container-xl overflow-hidden">
             <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-10.avif"
+                        src="/grid/branding-2/item-4.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -213,7 +213,7 @@ const Flip6 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-11.avif"
+                        src="/grid/branding-2/item-5.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -241,7 +241,7 @@ const Flip7 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-16.avif"
+                        src="/grid/branding-2/item-6.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -250,7 +250,7 @@ const Flip7 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-17.avif"
+                        src="/grid/branding-2/item-7.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
