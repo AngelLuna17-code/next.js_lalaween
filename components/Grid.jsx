@@ -30,27 +30,47 @@ const Grid = () => {
         [
             /* branding-1 */
             <Flip key="Flip" />,
-            <Flip3 key="Flip3" />
+            <Flip3 key="Flip3" />,
             /* branding-1 */
+            /* branding-3 */
+            '/grid/branding-3/item-1.avif',
+            /* branding-3 */
+            /* impresos-1 */
+            '/grid/impresos-1/item-7.avif',
+            /* impresos-1 */
+
         ],
         [
             /* branding-1 */
-
             <Flip2 key="Flip2" />,
-            <Flip4 key="Flip4" />
+            <Flip4 key="Flip4" />,
             /* branding-1 */
+            /* impresos-1 */
+            '/grid/impresos-1/item-2.avif',
+            '/grid/impresos-1/item-1.avif',
+            /* impresos-1 */
         ],
         [
             /* branding-2 */
             '/grid/branding-2/item-1.avif',
-            <Flip5 key="Flip5" />
+            <Flip5 key="Flip5" />,
             /* branding-2 */
+            /* Branding-3 */
+            <Flip8 key="Flip8" />,
+            /* Branding-3 */
+            /* impresos-1 */
+            <Flip9 key="Flip9" />,
+            <Flip10 key="Flip10" />
+            /* impresos-1 */
         ],
         [
             /* branding-2 */
             <Flip6 key="Flip6" />,
-            <Flip7 key="Flip7" />
+            <Flip7 key="Flip7" />,
             /* branding-2 */
+            /* branding-3 */
+            '/grid/branding-3/item-4.avif',
+            /* branding-3 */
         ],
     ];
 
