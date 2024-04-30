@@ -71,6 +71,9 @@ const Grid = () => {
             /* branding-3 */
             '/grid/branding-3/item-4.avif',
             /* branding-3 */
+            /* impresos-2 */
+            <Flip11 key="Flip11" />,
+            /* impresos-2 */
         ],
     ];
 
