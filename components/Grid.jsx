@@ -54,8 +54,6 @@ const Grid = () => {
             /* impresos-2 */
             <Flip12 key="Flip12" />,
             /* impresos-2 */
-
-
         ],
         [
             /* branding-2 */
