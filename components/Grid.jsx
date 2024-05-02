@@ -23,6 +23,7 @@ import {
     Flip20,
     Flip21
 } from '../components/Flip';
+import Grid2 from '../components/Grid2';
 
 const Grid = () => {
 
@@ -103,8 +104,8 @@ const Grid = () => {
     return (
         <section className='py-[50px] px-[15px]'>
             <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5'>
-                <div className='order-2 lg:order-1'>
-                    <div className='special-grid grid grid-cols-2 lg:grid-cols-4 gap-3 h-[400px] md:h-[600px] lg:h-[600px] overflow-y-auto overflow-x-hidden rounded-[15px]'>
+                <div className='order-2 lg:order-1 h-[400px] md:h-[600px] lg:h-[600px] overflow-y-auto'>
+                    <div className='special-grid grid grid-cols-2 lg:grid-cols-4 gap-3 overflow-x-hidden rounded-[15px]'>
                         {columnImages.map((column, colIndex) => (
                             <div key={colIndex}>
                                 {column.map((item, imgIndex) => (
@@ -127,6 +128,7 @@ const Grid = () => {
                             </div>
                         ))}
                     </div>
+                    <Grid2/>
                 </div>
                 <div className='order-1 lg:order-2 flex items-center justify-center'>
                     <div>

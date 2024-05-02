@@ -446,39 +446,17 @@ const Flip12 = ({ frontImageSrc, backImageSrc }) => {
     );
 };
 
-const Flip13 = ({ frontImageSrc, backImageSrc }) => {
-    const [flipped, setFlipped] = useState(false);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setFlipped(prevFlipped => !prevFlipped);
-        }, 2000);
-
-        return () => clearInterval(interval);
-    }, []);
+const Flip13 = () => {
 
     return (
-        <div className="flip-card-container-md overflow-hidden">
-            <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
-                <div className="flip-card-front">
-                    <Image
-                        className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-1/item-4.avif"
-                        alt="Front Image"
-                        width={300}
-                        height={300}
-                    />
-                </div>
-                <div className="flip-card-back">
-                    <Image
-                        className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-1/item-5.avif"
-                        alt="Front Image"
-                        width={300}
-                        height={300}
-                    />
-                </div>
-            </div>
+        <div>
+            <Image
+                className='h-auto w-[100%] rounded-[15px]'
+                src="/grid/contenido-1/item-6.avif"
+                alt="Front Image"
+                width={300}
+                height={300}
+            />
         </div>
     );
 };
