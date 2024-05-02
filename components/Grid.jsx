@@ -23,7 +23,6 @@ import {
     Flip20,
     Flip21
 } from '../components/Flip';
-import Grid2 from '../components/Grid2';
 
 const Grid = () => {
 
@@ -85,6 +84,43 @@ const Grid = () => {
             '/grid/impresos-2/item-7.avif',
             /* impresos-2 */
         ],
+        /* contenido-1 */
+        [
+            '/grid/contenido-1/item-2.avif',
+            '/grid/contenido-1/item-3.avif',
+        ],
+        [
+            '/grid/contenido-1/item-4.avif',
+            '/grid/contenido-1/item-5.avif',
+        ],
+        [
+            '/grid/contenido-1/item-6.avif',
+            '/grid/contenido-1/item-7.avif',
+        ],
+        [
+            '/grid/contenido-1/item-8.avif',
+            '/grid/contenido-1/item-9.avif',
+        ],
+        /* contenido-1 */
+        /* contenido-2 */
+
+        [
+            '/grid/contenido-2/item-7.avif',
+        ],
+        [
+            '/grid/contenido-2/item-2.avif',
+            '/grid/contenido-2/item-3.avif',
+
+        ],
+        [
+            '/grid/contenido-2/item-4.avif',
+            '/grid/contenido-2/item-5.avif',
+        ],
+        [
+            '/grid/contenido-2/item-6.avif', ,
+            '/grid/contenido-2/item-1.avif',
+        ]
+        /* contenido-2 */
     ];
 
     return (
@@ -114,7 +150,6 @@ const Grid = () => {
                             </div>
                         ))}
                     </div>
-                    <Grid2/>
                 </div>
                 <div className='order-1 lg:order-2 flex items-center justify-center'>
                     <div>
