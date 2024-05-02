@@ -649,7 +649,7 @@ const Flip18 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-121.avif"
+                        src="/grid/contenido-3/item-4.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -658,7 +658,7 @@ const Flip18 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-122.avif"
+                        src="/grid/contenido-3/item-5.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -686,7 +686,7 @@ const Flip19 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-128.avif"
+                        src="/grid/contenido-3/item-5.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -695,7 +695,7 @@ const Flip19 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-129.avif"
+                        src="/grid/contenido-3/item-8.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
