@@ -446,20 +446,43 @@ const Flip12 = ({ frontImageSrc, backImageSrc }) => {
     );
 };
 
-const Flip13 = () => {
+const Flip13 = ({ frontImageSrc, backImageSrc }) => {
+    const [flipped, setFlipped] = useState(false);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFlipped(prevFlipped => !prevFlipped);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     return (
-        <div>
-            <Image
-                className='h-auto w-[100%] rounded-[15px]'
-                src="/grid/contenido-1/item-6.avif"
-                alt="Front Image"
-                width={300}
-                height={300}
-            />
+        <div className="flip-card-container-md overflow-hidden">
+            <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
+                <div className="flip-card-front">
+                    <Image
+                        className='h-auto w-[100%] rounded-[15px]'
+                        src="/grid/contenido-1/item-4.avif"
+                        alt="Front Image"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+                <div className="flip-card-back">
+                    <Image
+                        className='h-auto w-[100%] rounded-[15px]'
+                        src="/grid/contenido-1/item-9.avif"
+                        alt="Front Image"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+            </div>
         </div>
     );
 };
+
 
 const Flip14 = ({ frontImageSrc, backImageSrc }) => {
     const [flipped, setFlipped] = useState(false);
@@ -478,7 +501,7 @@ const Flip14 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-1/item-6.avif"
+                        src="/grid/contenido-1/item-7.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -487,7 +510,7 @@ const Flip14 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-1/item-7.avif"
+                        src="/grid/contenido-1/item-8.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -524,7 +547,7 @@ const Flip15 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-1/item-9.avif"
+                        src="/grid/contenido-1/item-5.avif"
                         alt="Front Image"
                         width={300}
                         height={300}

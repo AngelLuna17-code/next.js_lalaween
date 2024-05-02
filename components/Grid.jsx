@@ -90,20 +90,19 @@ const Grid = () => {
             '/grid/contenido-1/item-3.avif',
         ],
         [
-            '/grid/contenido-1/item-4.avif',
+            <Flip13 key="Flip13" />,
             '/grid/contenido-1/item-5.avif',
         ],
         [
             '/grid/contenido-1/item-6.avif',
-            '/grid/contenido-1/item-7.avif',
+            <Flip14 key="Flip14" />,
         ],
         [
-            '/grid/contenido-1/item-8.avif',
+            <Flip15 key="Flip15" />,
             '/grid/contenido-1/item-9.avif',
         ],
         /* contenido-1 */
         /* contenido-2 */
-
         [
             '/grid/contenido-2/item-7.avif',
         ],
