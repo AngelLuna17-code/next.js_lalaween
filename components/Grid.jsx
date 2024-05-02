@@ -120,19 +120,22 @@ const Grid = () => {
         /* contenido-1 */
         [
             '/grid/contenido-1/item-2.avif',
-            '/grid/contenido-1/item-3.avif',
+            '/grid/contenido-1/item-3.avif'
         ],
         [
-            <Flip13 key="Flip13" />,
-            '/grid/contenido-1/item-5.avif',
-        ],
-        [
-            '/grid/contenido-1/item-6.avif',
-            <Flip14 key="Flip14" />,
-        ],
-        [
-            <Flip15 key="Flip15" />,
+            ,
+            '/grid/contenido-1/item-4.avif',
             '/grid/contenido-1/item-9.avif',
+        ],
+        [
+            '/grid/contenido-1/item-5.avif',
+            '/grid/contenido-1/item-6.avif',
+
+        ],
+        [
+            '/grid/contenido-1/item-7.avif',
+
+            '/grid/contenido-1/item-8.avif',
         ],
         /* contenido-1 */
         /* contenido-2 */
@@ -140,27 +143,26 @@ const Grid = () => {
             '/grid/contenido-2/item-7.avif',
         ],
         [
-            <Flip16 key="Flip16" />,
+            '/grid/contenido-2/item-2.avif',
             '/grid/contenido-2/item-3.avif',
-
         ],
         [
             '/grid/contenido-2/item-4.avif',
             '/grid/contenido-2/item-5.avif',
         ],
         [
-            <Flip17 key="Flip17" />,
+            '/grid/contenido-2/item-6.avif',
             '/grid/contenido-2/item-1.avif',
         ],
         /* contenido-2 */
         /* contenido-3 */
         [
             '/grid/contenido-3/item-3.avif',
-            <Flip18 key="Flip18" />,
+            '/grid/contenido-3/item-4.avif',
         ],
         [
 
-            <Flip19 key="Flip19" />,
+            '/grid/contenido-3/item-5.avif',
             '/grid/contenido-3/item-6.avif',
         ],
         [
