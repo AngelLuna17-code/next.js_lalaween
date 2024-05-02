@@ -47,6 +47,9 @@ const Grid = () => {
             /* impresos-4 */
             '/grid/impresos-4/item-5.avif',
             /* impresos-4 */
+            /* impresos-5 */
+            '/grid/impresos-5/item-4.avif',
+            /* impresos-5 */
         ],
         [
             /* branding-1 */
@@ -66,6 +69,9 @@ const Grid = () => {
             /* impresos-4 */
             '/grid/impresos-4/item-4.avif',
             /* impresos-4 */
+            /* impresos-5 */
+            '/grid/impresos-5/item-5.avif',
+            /* impresos-5 */
         ],
         [
             /* branding-2 */
