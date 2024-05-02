@@ -210,6 +210,40 @@ const Grid = () => {
             '/grid/contenido-7/item-2.avif',
         ],
         /* contenido-7 */
+        /* contenido-8 */
+        [
+            '/grid/contenido-8/item-1.avif',
+            '/grid/contenido-8/item-2.avif',
+        ],
+        [
+            '/grid/contenido-8/item-3.avif',
+            '/grid/contenido-8/item-4.avif',
+        ],
+        [
+            '/grid/contenido-8/item-5.avif',
+            '/grid/contenido-8/item-6.avif',
+        ],
+        [
+            '/grid/contenido-8/item-7.avif',
+        ],
+        /* contenido-8 */
+                /* contenido-8 */
+                [
+                    '/grid/contenido-8/item-1.avif',
+                    '/grid/contenido-8/item-2.avif',
+                ],
+                [
+                    '/grid/contenido-8/item-3.avif',
+                    '/grid/contenido-8/item-4.avif',
+                ],
+                [
+                    '/grid/contenido-8/item-5.avif',
+                    '/grid/contenido-8/item-6.avif',
+                ],
+                [
+                    '/grid/contenido-8/item-7.avif',
+                ],
+                /* contenido-8 */
     ];
 
     return (
