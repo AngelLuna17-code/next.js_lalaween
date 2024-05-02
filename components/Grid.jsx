@@ -227,23 +227,76 @@ const Grid = () => {
             '/grid/contenido-8/item-7.avif',
         ],
         /* contenido-8 */
-                /* contenido-8 */
-                [
-                    '/grid/contenido-8/item-1.avif',
-                    '/grid/contenido-8/item-2.avif',
-                ],
-                [
-                    '/grid/contenido-8/item-3.avif',
-                    '/grid/contenido-8/item-4.avif',
-                ],
-                [
-                    '/grid/contenido-8/item-5.avif',
-                    '/grid/contenido-8/item-6.avif',
-                ],
-                [
-                    '/grid/contenido-8/item-7.avif',
-                ],
-                /* contenido-8 */
+        /* contenido-9 */
+        [
+            '/grid/contenido-9/item-7.avif',
+        ],
+        [
+            '/grid/contenido-9/item-3.avif',
+            '/grid/contenido-9/item-4.avif',
+        ],
+        [
+            '/grid/contenido-9/item-5.avif',
+            '/grid/contenido-9/item-6.avif',
+        ],
+        [
+            '/grid/contenido-9/item-1.avif',
+            '/grid/contenido-9/item-2.avif',
+        ],
+        /* contenido-9 */
+        /* contenido-10 */
+        [
+            '/grid/contenido-10/item-1.avif',
+            '/grid/contenido-10/item-2.avif',
+        ],
+        [
+            '/grid/contenido-10/item-3.avif',
+            '/grid/contenido-10/item-4.avif',
+        ],
+        [
+            '/grid/contenido-10/item-6.avif',
+            '/grid/contenido-10/item-7.avif',
+        ],
+        [
+            '/grid/contenido-10/item-5.avif',
+        ],
+        /* contenido-10 */
+        /* contenido-11 */
+        [
+            '/grid/contenido-11/item-3.avif',
+            '/grid/contenido-11/item-4.avif',
+        ],
+        [
+            '/grid/contenido-11/item-5.avif',
+            '/grid/contenido-11/item-6.avif',
+        ],
+        [
+            '/grid/contenido-11/item-7.avif',
+            '/grid/contenido-11/item-8.avif',
+        ],
+        [
+            '/grid/contenido-11/item-1.avif',
+            '/grid/contenido-11/item-2.avif',
+        ],
+        /* contenido-11 */
+        /* contenido-12 */
+        [
+            '/grid/contenido-12/item-1.avif',
+            '/grid/contenido-12/item-2.avif',
+        ],
+        [
+            '/grid/contenido-12/item-3.avif',
+            '/grid/contenido-12/item-4.avif',
+        ],
+        [
+            '/grid/contenido-12/item-5.avif',
+            '/grid/contenido-12/item-6.avif',
+        ],
+        [
+            '/grid/contenido-12/item-7.avif',
+            '/grid/contenido-12/item-8.avif',
+        ],
+        /* contenido-12 */
     ];
 
     return (
