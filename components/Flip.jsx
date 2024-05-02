@@ -723,7 +723,7 @@ const Flip20 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-137.avif"
+                        src="/grid/impresos-4/item-2.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -732,7 +732,7 @@ const Flip20 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/item-138.avif"
+                        src="/grid/impresos-4/item-3.avif"
                         alt="Front Image"
                         width={300}
                         height={300}

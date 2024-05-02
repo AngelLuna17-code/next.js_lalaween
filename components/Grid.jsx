@@ -41,6 +41,12 @@ const Grid = () => {
             /* impresos-2 */
             '/grid/impresos-2/item-4.avif',
             /* impresos-2 */
+            /* impresos-3 */
+            '/grid/impresos-3/item-1.avif',
+            /* impresos-3 */
+            /* impresos-4 */
+            '/grid/impresos-4/item-5.avif',
+            /* impresos-4 */
         ],
         [
             /* branding-1 */
@@ -54,6 +60,12 @@ const Grid = () => {
             /* impresos-2 */
             <Flip12 key="Flip12" />,
             /* impresos-2 */
+            /* impresos-3 */
+            '/grid/impresos-3/item-2.avif',
+            /* impresos-3 */
+            /* impresos-4 */
+            '/grid/impresos-4/item-4.avif',
+            /* impresos-4 */
         ],
         [
             /* branding-2 */
@@ -70,6 +82,12 @@ const Grid = () => {
             /* impresos-2 */
             '/grid/impresos-2/item-3.avif',
             /* impresos-2 */
+            /* impresos-3 */
+            '/grid/impresos-3/item-3.avif',
+            /* impresos-3 */
+            /* impresos-4 */
+            <Flip20 key="Flip20" />,
+            /* impresos-4 */
         ],
         [
             /* branding-2 */
@@ -83,6 +101,12 @@ const Grid = () => {
             <Flip11 key="Flip11" />,
             '/grid/impresos-2/item-7.avif',
             /* impresos-2 */
+            /* impresos-4 */
+            '/grid/impresos-4/item-1.avif',
+            /* impresos-4 */
+            /* impresos-5 */
+            '/grid/impresos-5/item-1.avif',
+            /* impresos-5 */
         ],
         /* contenido-1 */
         [
