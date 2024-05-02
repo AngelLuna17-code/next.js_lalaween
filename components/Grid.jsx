@@ -88,6 +88,9 @@ const Grid = () => {
             /* impresos-4 */
             <Flip20 key="Flip20" />,
             /* impresos-4 */
+            /* impresos-5 */
+            <Flip21 key="Flip21" />,
+            /* impresos-4 */
         ],
         [
             /* branding-2 */
