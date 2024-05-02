@@ -17,7 +17,7 @@ const PlanForm = () => {
         <div className="container mx-auto py-[50px]">
             <div className='px-[15px] sm:px-[0px]'>
                 <div className="text-white px-[15px]  w-full sm:w-[60%] lg:w-[40%] mx-auto py-[25px] px-[25px] rounded-[15px]" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
-                    <form action="https://formsubmit.co/luna17ahle@gmail.com" method="POST">
+                    <form action="https://formsubmit.co/Facturacionlalaween@gmail.com" method="POST">
                         {/* ¿Cuentas con redes sociales para tu marca? */}
                         <div className="mt-3">
                             <label>
@@ -47,20 +47,21 @@ const PlanForm = () => {
                         {/* Seleccione los lenguajes que conoce */}
                         <div className="mt-3">
                             <p>
-                                Seleccione los lenguajes que conoce:
+                                ¿Que tipo de contenido deseas publicar?
                             </p>
                             <div>
-                                <label>
-                                    <input type="checkbox" name="Imagen individual" />
+                                <label
+                                    name="Que tipo de contenido">
+                                    <input type="checkbox" name="Tipo de contenido - Imagen individual" />
                                     Imagen individual
                                     <br />
-                                    <input type="checkbox" name="Imagenes estilo carrusel" />
+                                    <input type="checkbox" name="Tipo de contenido - Imagenes estilo carrusel" />
                                     Imagenes estilo carrusel
                                     <br />
-                                    <input type="checkbox" name="Stories" />
+                                    <input type="checkbox" name="Tipo de contenido - Stories" />
                                     Stories
                                     <br />
-                                    <input type="checkbox" name="Reels" />
+                                    <input type="checkbox" name="Tipo de contenido - Reels" />
                                     Reels
                                 </label>
                             </div>
@@ -73,7 +74,7 @@ const PlanForm = () => {
                                 <input
                                     className="w-[80%] font-black text-black typing mt-2"
                                     type="range"
-                                    name="Rango"
+                                    name="Cuantas veces deseas publicar a la semana"
                                     min="1"
                                     max="20"
                                     value={rangeValue1}
@@ -83,7 +84,6 @@ const PlanForm = () => {
                                 <input
                                     className="w-[15%] font-black text-black typing ml-2"
                                     type="number"
-                                    name="Rango"
                                     min="1"
                                     max="20"
                                     value={rangeValue1}
@@ -100,12 +100,12 @@ const PlanForm = () => {
                             </p>
                             <div>
                                 <label>
-                                    <input type="radio" name="campaign" value="si" />
+                                    <input type="radio" name="campaña" value="si" />
                                     Sí
                                 </label>
                                 <br />
                                 <label>
-                                    <input type="radio" name="campaign" value="no" />
+                                    <input type="radio" name="campaña" value="no" />
                                     No
                                 </label>
                             </div>
@@ -118,7 +118,7 @@ const PlanForm = () => {
                                 <input
                                     className="w-[80%] font-black text-black typing mt-2"
                                     type="range"
-                                    name="Rango"
+                                    name="Cuantas campañas al mes te gustaría que realicemos"
                                     min="1"
                                     max="10"
                                     value={rangeValue2}
@@ -128,7 +128,6 @@ const PlanForm = () => {
                                 <input
                                     className="w-[15%] font-black text-black typing ml-2"
                                     type="number"
-                                    name="Rango"
                                     min="1"
                                     max="10"
                                     value={rangeValue2}
