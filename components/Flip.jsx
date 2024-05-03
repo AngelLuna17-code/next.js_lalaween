@@ -472,7 +472,7 @@ const Flip13 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-1/item-9.avif"
+                        src="/grid/contenido-1/item-7.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -490,7 +490,7 @@ const Flip14 = ({ frontImageSrc, backImageSrc }) => {
     useEffect(() => {
         const interval = setInterval(() => {
             setFlipped(prevFlipped => !prevFlipped);
-        }, 3500);
+        }, 3100);
 
         return () => clearInterval(interval);
     }, []);
@@ -510,7 +510,7 @@ const Flip14 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-1/item-8.avif"
+                        src="/grid/contenido-1/item-4.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
