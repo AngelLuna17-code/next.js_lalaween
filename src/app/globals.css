@@ -219,6 +219,13 @@ iframe {
   perspective: 1000px;
 }
 
+@media (min-width: 407px) {
+  .flip-card-container-xl {
+    width: 182.5px;
+    height: 281.39px;
+  }
+}
+
 @media (min-width: 640px) {
   .flip-card-container-xl {
     width: 299px;
@@ -262,6 +269,13 @@ iframe {
   perspective: 1000px;
 }
 
+@media (min-width: 407px) {
+  .flip-card-container-md {
+    width: 182.5px;
+    height: 182.5px;
+  }
+}
+
 @media (min-width: 640px) {
   .flip-card-container-md {
     width: 299px;
@@ -303,6 +317,13 @@ iframe {
   width: 159px;
   height: 103.33px;
   perspective: 1000px;
+}
+
+@media (min-width: 407px) {
+  .flip-card-container-sm {
+    width: 182.5px;
+    height: 118.34px;
+  }
 }
 
 @media (min-width: 640px) {
