@@ -101,6 +101,13 @@ const Paquetes = () => {
         },
       },
       {
+        breakpoint: 407, // xs+ breakpoint
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '0px',
+        },
+      },
+      {
         breakpoint: 360, // xs breakpoint
         settings: {
           slidesToShow: 1,
