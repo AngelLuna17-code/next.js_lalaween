@@ -174,7 +174,7 @@ const PlanForm = () => {
                                 Para una atención más personalizada, y si ya tienes redes sociales de tu marca compartenos los enlaces para brindarte una plan más personalizado
                                 basandonos en lo que requieres y lo que tu marca necesita.
                                 <br />
-                                Escribe tu dirección de correo o número de whats'app y en breve te envíaremos tu cotización.
+                                Escribe tu dirección de correo o número de whats&apos;app y en breve te envíaremos tu cotización.
                             </p>
                         </form>
                     </div>
