@@ -154,7 +154,7 @@ const Grid = () => {
         /* contenido-2 */
         /* contenido-3 */
         [
-            '/grid/contenido-3/item-3.avif',
+            <Flip17 key="Flip17" />,
             '/grid/contenido-3/item-4.avif',
         ],
         [
@@ -164,7 +164,7 @@ const Grid = () => {
         ],
         [
             '/grid/contenido-3/item-7.avif',
-            '/grid/contenido-3/item-8.avif',
+            <Flip18 key="Flip18" />,
         ],
         [
             '/grid/contenido-3/item-1.avif',

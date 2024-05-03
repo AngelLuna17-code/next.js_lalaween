@@ -612,7 +612,7 @@ const Flip17 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-2/item-6.avif"
+                        src="/grid/contenido-3/item-3.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -621,7 +621,7 @@ const Flip17 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-2/item-3.avif"
+                        src="/grid/contenido-3/item-8.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -638,7 +638,7 @@ const Flip18 = ({ frontImageSrc, backImageSrc }) => {
     useEffect(() => {
         const interval = setInterval(() => {
             setFlipped(prevFlipped => !prevFlipped);
-        }, 3500);
+        }, 2000);
 
         return () => clearInterval(interval);
     }, []);
@@ -649,7 +649,7 @@ const Flip18 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-3/item-4.avif"
+                        src="/grid/contenido-3/item-8.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -658,7 +658,7 @@ const Flip18 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-3/item-5.avif"
+                        src="/grid/contenido-3/item-3.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
