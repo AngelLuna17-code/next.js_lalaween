@@ -1,45 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import {
-    Flip,
-    Flip2,
-    Flip3,
-    Flip4,
-    Flip5,
-    Flip6,
-    Flip7,
-    Flip8,
-    Flip9,
-    Flip10,
-    Flip11,
-    Flip12,
-    Flip13,
-    Flip14,
-    Flip15,
-    Flip16,
-    Flip17,
-    Flip18,
-    Flip19,
-    Flip20,
-    Flip21,
-    Flip22,
-    Flip23,
-    Flip24,
-    Flip25,
-    Flip26,
-    Flip27,
-    Flip28,
-    Flip29,
-    Flip30,
-    Flip31,
-    Flip32,
-    Flip33,
-    Flip34,
-    Flip35,
-    Flip36,
-    Flip37,
-    Flip38
-} from '../components/Flip';
+import { Flip, Flip2, Flip3, Flip4, Flip5, Flip6, Flip7, Flip8, Flip9, Flip10, Flip11, Flip12, Flip13, Flip14, Flip15, Flip16, Flip17, Flip18, Flip19, Flip20, Flip21, Flip22, Flip23, Flip24, Flip25, Flip26, Flip27, Flip28, Flip29, Flip30, Flip31, Flip32, Flip33, Flip34, Flip35, Flip36, Flip37, Flip38 } from '../components/Flip';
 
 const Grid = () => {
 
