@@ -26,7 +26,9 @@ import {
     Flip23,
     Flip24,
     Flip25,
-    Flip26
+    Flip26,
+    Flip27,
+    Flip28
 } from '../components/Flip';
 
 const Grid = () => {
@@ -234,8 +236,8 @@ const Grid = () => {
             '/grid/contenido-7/item-4.avif',
         ],
         [
-            '/grid/contenido-7/item-5.avif',
-            '/grid/contenido-7/item-6.avif',
+            <Flip27 key="Flip27" />,
+            <Flip28 key="Flip28" />,
         ],
         [
             '/grid/contenido-7/item-7.avif',
