@@ -1112,4 +1112,77 @@ const Flip30 = ({ frontImageSrc, backImageSrc }) => {
     );
 };
 
-export { Flip, Flip2, Flip3, Flip4, Flip5, Flip6, Flip7, Flip8, Flip9, Flip10, Flip11, Flip12, Flip13, Flip14, Flip15, Flip16, Flip17, Flip18, Flip19, Flip20, Flip21, Flip22, Flip23, Flip24, Flip25, Flip26, Flip27, Flip28, Flip29, Flip30 };
+const Flip31 = ({ frontImageSrc, backImageSrc }) => {
+    const [flipped, setFlipped] = useState(false);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFlipped(prevFlipped => !prevFlipped);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className="flip-card-container-md overflow-hidden">
+            <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
+                <div className="flip-card-front">
+                    <Image
+                        className='h-auto w-[100%] rounded-[15px]'
+                        src="/grid/contenido-9/item-4.avif"
+                        alt="Front Image"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+                <div className="flip-card-back">
+                    <Image
+                        className='h-auto w-[100%] rounded-[15px]'
+                        src="/grid/contenido-9/item-6.avif"
+                        alt="Front Image"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+            </div>
+        </div>
+    );
+
+}; const Flip32 = ({ frontImageSrc, backImageSrc }) => {
+    const [flipped, setFlipped] = useState(false);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setFlipped(prevFlipped => !prevFlipped);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className="flip-card-container-md overflow-hidden">
+            <div className={`flip-card ${flipped ? 'flipped' : ''}`}>
+                <div className="flip-card-front">
+                    <Image
+                        className='h-auto w-[100%] rounded-[15px]'
+                        src="/grid/contenido-9/item-6.avif"
+                        alt="Front Image"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+                <div className="flip-card-back">
+                    <Image
+                        className='h-auto w-[100%] rounded-[15px]'
+                        src="/grid/contenido-9/item-4.avif"
+                        alt="Front Image"
+                        width={300}
+                        height={300}
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export { Flip, Flip2, Flip3, Flip4, Flip5, Flip6, Flip7, Flip8, Flip9, Flip10, Flip11, Flip12, Flip13, Flip14, Flip15, Flip16, Flip17, Flip18, Flip19, Flip20, Flip21, Flip22, Flip23, Flip24, Flip25, Flip26, Flip27, Flip28, Flip29, Flip30, Flip31, Flip32 };
