@@ -1,6 +1,4 @@
 "use client";
-
-
 import React, { useState } from 'react';
 
 const PlanForm = () => {
@@ -24,15 +22,23 @@ const PlanForm = () => {
     return (
         <div className="container mx-auto py-[50px]">
             <div className='px-[15px] sm:px-[0px]'>
-                <div className='mb-5 flex justify-center'>
-                    <button
-                        className='px-[15px] py-[10px] bg-[#006d6a] hover:bg-[#005351] font-bold rounded-[10px]'
-                        onClick={toggleForm}>
-                        Personaliza tu paquete
-                    </button>
-                </div>
+                {!showForm && (
+                    <div className='mb-5 flex justify-center'>
+                        <button
+                            className='px-[15px] py-[10px] bg-[#006d6a] hover:bg-[#005351] font-bold rounded-[10px]'
+                            onClick={toggleForm}>
+                            Personaliza tu paquete
+                        </button>
+                    </div>
+                )}
                 {showForm && (
                     <div className="text-white px-[15px]  w-full sm:w-[60%] lg:w-[40%] mx-auto py-[25px] px-[25px] rounded-[15px]" style={{ background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}>
+                        <button
+                            className="absolute top-0 right-0 m-4 text-white" onClick={toggleForm}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                            </svg>
+                        </button>
                         <form action="https://formsubmit.co/Facturacionlalaween@gmail.com" method="POST">
                             {/* ¿Cuentas con redes sociales para tu marca? */}
                             <div className="mt-3">
@@ -173,4 +179,3 @@ const PlanForm = () => {
 };
 
 export default PlanForm;
-
