@@ -527,7 +527,7 @@ const Flip15 = ({ frontImageSrc, backImageSrc }) => {
     useEffect(() => {
         const interval = setInterval(() => {
             setFlipped(prevFlipped => !prevFlipped);
-        }, 3000);
+        }, 3500);
 
         return () => clearInterval(interval);
     }, []);
@@ -538,7 +538,7 @@ const Flip15 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-1/item-8.avif"
+                        src="/grid/contenido-2/item-3.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -547,7 +547,7 @@ const Flip15 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-1/item-5.avif"
+                        src="/grid/contenido-2/item-4.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -564,7 +564,7 @@ const Flip16 = ({ frontImageSrc, backImageSrc }) => {
     useEffect(() => {
         const interval = setInterval(() => {
             setFlipped(prevFlipped => !prevFlipped);
-        }, 4000);
+        }, 3500);
 
         return () => clearInterval(interval);
     }, []);
@@ -575,7 +575,7 @@ const Flip16 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-front">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-2/item-2.avif"
+                        src="/grid/contenido-2/item-4.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
@@ -584,7 +584,7 @@ const Flip16 = ({ frontImageSrc, backImageSrc }) => {
                 <div className="flip-card-back">
                     <Image
                         className='h-auto w-[100%] rounded-[15px]'
-                        src="/grid/contenido-2/item-6.avif"
+                        src="/grid/contenido-2/item-3.avif"
                         alt="Front Image"
                         width={300}
                         height={300}
