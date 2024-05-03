@@ -170,6 +170,12 @@ const PlanForm = () => {
                             <div className='mt-5 flex justify-center'>
                                 <button className='bg-[#066a69] hover:bg-[#01a09a] px-[45px] py-[10px] font-black rounded-[15px]' type='submit'>Enviar</button>
                             </div>
+                            <p className='mt-3'>
+                                Para una atención más personalizada, y si ya tienes redes sociales de tu marca compartenos los enlaces para brindarte una plan más personalizado
+                                basandonos en lo que requieres y lo que tu marca necesita.
+                                <br />
+                                Escribe tu dirección de correo o número de whats'app y en breve te envíaremos tu cotización.
+                            </p>
                         </form>
                     </div>
                 )}
