@@ -189,12 +189,7 @@ const Paquete5 = () => {
                     {/* Pa’ que sueñen */}
                 </div>
                 <div className='mt-5'>
-                    <p className='text-center typing'>
-                        Terminos y condiciones
-                    </p>
-                    <div className='mt-1'>
-                        <Accordion />
-                    </div>
+                    <Accordion />
                 </div>
             </div>
         </section>
