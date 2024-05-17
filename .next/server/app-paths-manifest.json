@@ -1,0 +1,12 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/Facturas/page": "app/Facturas/page.js",
+  "/Paquete1/page": "app/Paquete1/page.js",
+  "/Paquete2/page": "app/Paquete2/page.js",
+  "/Paquete5/page": "app/Paquete5/page.js",
+  "/Paquete3/page": "app/Paquete3/page.js",
+  "/Paquete4/page": "app/Paquete4/page.js",
+  "/Planes/page": "app/Planes/page.js"
+}
